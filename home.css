@@ -19,8 +19,29 @@
 }
 
 .midsection {
-	height:10000px;
+	height:800px;
 	background-color:#DCDCDC;
+	font-size:36px;
+	text-align: center
+}
+
+.undermidsection {
+	height:480px;
+	background-color:#FFFFFF;
+	font-size:36px;
+	text-align: center
+}
+
+.undermidsection2 {
+	height:480px;
+	background-color:#DCDCDC;
+	font-size:36px;
+	text-align: center
+}
+
+.undermidsection3 {
+	height:480px;
+	background-color:#FFFFFF;
 	font-size:36px;
 	text-align: center
 }
