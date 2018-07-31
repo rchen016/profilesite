@@ -1,0 +1,25 @@
+<% include ../partials/headers %>
+<div class="container">
+    <div class="row">
+        <h1 class="formheader">Add New Project</h1>
+        <div class="maininputform">
+            <form action="/resume" method="POST">
+                <div class="form-group">
+                    <input class="form-control" type="text" name="name" placeholder="project">    
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="image" placeholder="image">    
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="descript" placeholder="description">    
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-lg btn-primary btn-block">Submit</button>    
+                </div>
+            </form> 
+            <a href="/resume">Go Back</a>
+        </div>
+    </div>
+</div>
+
+<% include ../partials/footer %>

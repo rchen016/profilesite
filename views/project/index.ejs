@@ -1,0 +1,28 @@
+<% include ../partials/headers %>
+<div class="container">
+    <header class="jumbotron">
+        <div class="container">
+          <h1>Resume</h1>
+            <p class="col-md-4 col-sm-12 fontUbuntu"><strong>RRRicky Chen</strong></p>
+            <p class="col-md-4 col-sm-12 fontUbuntu" id="sz18"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> r*********0@gmail.com</p>
+            <p class="col-md-4 col-sm-12 fontUbuntu" id="sz18"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span> (415) 6**-**48 </p>
+        </div>
+    </header>
+    <div class="row text-center projectcontainer">
+        <% index.forEach (function(project){ %>
+            <div class="col-md-3 col-sm-6">
+                <div class="thumbnail">
+                    <img src="<%= project.image %>">
+                    <div class="caption">
+                        <h4 class="fontUbuntu"> <%= project.name %> </h4>
+                    </div>
+                    <p>
+                        <a href="/resume/<%= project._id %>" class="btn btn-primary">More Info</a>
+                    </p>
+                </div>
+            </div>
+        <% }); %>
+    </div>
+</div>
+
+<% include ../partials/footer %>
