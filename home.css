@@ -1,0 +1,26 @@
+@media (min-width: 768px) and (max-width: 991px) {
+    .middleDiv {
+       float: right;
+    }
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("https://images.unsplash.com/photo-1483203257148-66ee23170d09?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=84a3a57effa51dd37d2984d8d933dae0&auto=format&fit=crop&w=1350&q=80");
+
+    /* Set a specific height */
+    min-height: 800px;
+	min-width: 100px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.midsection {
+	height:10000px;
+	background-color:#DCDCDC;
+	font-size:36px;
+	text-align: center
+}
