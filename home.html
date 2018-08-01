@@ -5,71 +5,101 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<link rel="stylesheet" href="home.css" />
+		<link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">
 		<title>Hello, world!</title>
 	</head>
 	<body>
-		<!-- Nav Bar Start -->
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<a class="navbar-brand" href="#">Welcome!</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="#">About Me<span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Education</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Misc
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#">Awards</a>
-							<a class="dropdown-item" href="#">Clubs</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#">Misc</a>
-						</div>
-					</li>
-				</ul>
-				<form class="form-inline my-2 my-lg-0">
-					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-				</form>
-			</div>
-			<!-- Nav Bar End -->
-		</nav>
-			<div class="container fluid float-left">
-				<div class="parallax img-responsive test"></div>
-			</div>
-			 <div class="container">
-				<div class="midsection">
-					<div>
-						<img style="margin-top:100px" src="https://i.imgur.com/unXrwuh.png" class="img-thumbnail" />
+		<div id="page" class="container">
+			<div class="row">
+				<!-- Nav Bar Start -->
+				<nav class="navbar navbar-expand-lg navbar-light bg-light col col-lg-12">
+					<a class="navbar-brand" href="#">Welcome!</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item active">
+								<a class="nav-link" href="#aboutmesection">About Me<span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#edusection">Education</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Misc
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="#awardclubsection">Awards</a>
+									<a class="dropdown-item" href="#awardclubsection">Clubs</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#miscsection">Misc</a>
+								</div>
+							</li>
+						</ul>
+						<form class="form-inline my-2 my-lg-0">
+							<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+							<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+						</form>
 					</div>
-					<h1 style="margin-top:50px">
+				</nav>
+				<!-- Nav Bar End -->
+			</div>
+			<div class="row topsection">
+				<div class="parallax img-responsive col col-lg-9"></div>
+				<div class="col col-lg-3 float-right center">
+					<div class="float-right">
+						<img src="https://i.imgur.com/unXrwuh.png" class="img-thumbnail" />
+					</div>
+					<h1 class="float-right descriptionFont1" style="margin-top:50px">
 						Ricky Chen
 					</h1>
-					<h5 style="margin-top:50px">
-						BS in Computer Science
+					<h5 class="float-right descriptionFont1" style="text-align:center">
+						BS in Computer Science<br/>
+						San Francisco, California<br/><br/>
+						******10@gmail.com<br/><br/>
+						(415)6**-***8<br/><br/>
 					</h5>
-					<h5>
-						San Francisco, California
-					</h5>
-					<h5 style="margin-top:100px">
-						******10@gmail.com
-					</h5>
-					<h5>
-						(415)6**-***8
-					</h5>
-				 </div>
-				<div class="undermidsection"></div>
-				<div class="undermidsection2"></div>
-				<div class="undermidsection3"></div>
-				<div class="bottomsection"></div>
-			 </div>
+				</div>
+			</div>
+			<div id="aboutmesection" class="aboutmeblock aboutmeblockleft col col-lg-12 descriptionFont1">
+				<p class="aboutmeblockinfo">
+					About Me: Bacon ipsum dolor amet pork <br />
+					jowl bacon chicken strip steak. Pork belly jerky pork landjaeger<br />
+					venison shankle andouille spare ribs turducken swine drumstick. <br />
+					kevin venison ham tenderloin jerky frankfurter meatloaf. Meatball<br />
+					turducken filet mignon short loin sirloin kevin. Boudin turkey<br />
+				</p>
+			</div>
+			<div id="edusection" class="edublock descriptionFont1">
+				<p>
+					Education: Bacon ipsum dolor amet pork <br />
+					jowl bacon chicken strip steak. Pork belly jerky pork landjaeger<br />
+					venison shankle andouille spare ribs turducken swine drumstick. <br />
+					kevin venison ham tenderloin jerky frankfurter meatloaf. Meatball<br />
+					turducken filet mignon short loin sirloin kevin. Boudin turkey<br />
+				</p>
+			</div>
+			<div id="awardclubsection" class="awardclubblock descriptionFont1">
+				<p>
+					Award/Club: Bacon ipsum dolor amet pork <br />
+					jowl bacon chicken strip steak. Pork belly jerky pork landjaeger<br />
+					venison shankle andouille spare ribs turducken swine drumstick. <br />
+					kevin venison ham tenderloin jerky frankfurter meatloaf. Meatball<br />
+					turducken filet mignon short loin sirloin kevin. Boudin turkey<br />
+				</p>
+			</div>
+			<div id="miscsection" class="miscblock descriptionFont1">
+				<p>
+					Misc: Bacon ipsum dolor amet pork <br />
+					jowl bacon chicken strip steak. Pork belly jerky pork landjaeger<br />
+					venison shankle andouille spare ribs turducken swine drumstick. <br />
+					kevin venison ham tenderloin jerky frankfurter meatloaf. Meatball<br />
+					turducken filet mignon short loin sirloin kevin. Boudin turkey<br />
+				</p>
+			</div>
+			<div class="bottomsection"></div>
+		</div>
 		<!-- Bootstrap -->
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
