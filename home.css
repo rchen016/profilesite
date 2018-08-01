@@ -27,31 +27,30 @@
 }
 
 .aboutmeblock {
-	height:480px;
+	height:320px;
 	background-color:#DCDCDC;
 	font-size:25px;
 	text-align: center;
 	white-space: nowrap;
 }
-.aboutmeblockinfo{
 
-}
 .edublock {
-	height:480px;
+	height:595px;
 	background-color:#FFFFFF;
 	font-size:36px;
 	text-align: center;
+	margin-top: 40px;
 }
 
 .awardclubblock {
-	height:480px;
+	height: 460px;
 	background-color:#DCDCDC;
 	font-size:36px;
 	text-align: center;
 }
 
 .miscblock {
-	height:480px;
+	height:350px;
 	background-color:#FFFFFF;
 	font-size:36px;
 	text-align: center;
@@ -89,4 +88,20 @@
 
 .descriptionFont1{
 	font-family: 'Rokkitt', serif;
+}
+
+hr {
+  width: 15%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 4px solid rgba(0, 0, 0, 0.1);
+}
+
+.educationFont{
+	font-size: 15px;
+}
+
+.descTextSize{
+	font-size: 25px;
 }
