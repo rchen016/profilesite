@@ -3,6 +3,9 @@
 }
 /*iPhoneX start*/
 @media (max-width: 375px){
+	div[class*="parallax"] {
+		background-size: 500px 100%
+	}
 	div[class*="headerNameSize"] {
 		font-size: 1.5rem;
 		text-align: center;
