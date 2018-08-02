@@ -1,7 +1,44 @@
 #page {
     overflow: hidden;
 }
-
+/*iPhoneX start*/
+@media (max-width: 375px){
+	div[class*="headerNameSize"] {
+		font-size: 1.5rem;
+		text-align: center;
+	}
+	div[class*="headerDescSize"] {
+		text-align: center;
+		font-size: .9rem;
+	}
+	div[class*="infoHeaderSize"] {
+		font-size: 1.5rem;
+		margin-top: 8px;
+	}
+	div[class*="infoDescSize"] {
+		font-size: 1rem;
+		white-space:normal;
+	}
+	div[class*="educationHeaders"] {
+		font-size: 1.2rem;
+	}
+	div[class*="aboutmeblock"] {
+		height: 12rem;
+	}
+	div[class*="edublock"] {
+		height: 28.5rem;
+	}
+	div[class*="educationClasses"] {
+		font-size: .8rem;
+	}
+	div[class*="skillblock"] {
+		height: 14.5rem;
+	}
+	div[class*="awardclubblock"] {
+		height: 20.5rem;
+	}
+}
+/*iPhoneX end*/
 .topsection{
 	margin-top: 30px;
 }
@@ -27,7 +64,8 @@
 }
 
 .aboutmeblock {
-	height:320px;
+	/*height:320px;*/
+	height: 25rem;
 	background-color:#DCDCDC;
 	font-size:25px;
 	text-align: center;
@@ -39,19 +77,18 @@
 	background-color:#FFFFFF;
 	font-size:36px;
 	text-align: center;
-	margin-top: 40px;
 }
 
 .awardclubblock {
 	height: 460px;
-	background-color:#DCDCDC;
+	background-color:#FFFFFF;
 	font-size:36px;
 	text-align: center;
 }
 
-.miscblock {
+.skillblock {
 	height:350px;
-	background-color:#FFFFFF;
+	background-color:#DCDCDC;
 	font-size:36px;
 	text-align: center;
 }
@@ -61,17 +98,6 @@
 	background-color:#708090;
 	font-size:36px;
 	text-align: center;
-}
-
-
-.aboutmeblockleft::before {
-	top: 0;
-    bottom: 0;
-	content: '';
-    left: -999em;
-    background: #DCDCDC;
-	width: 999em;
-	position: absolute;
 }
 
 #body-text {
@@ -86,7 +112,7 @@
   text-align: center
 }
 
-.descriptionFont1{
+.RokkittFont{
 	font-family: 'Rokkitt', serif;
 }
 
@@ -104,4 +130,8 @@ hr {
 
 .descTextSize{
 	font-size: 25px;
+}
+
+.skillmargin{
+	margin-bottom: 10px
 }
