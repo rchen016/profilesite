@@ -4,11 +4,14 @@
 /*iPhoneX start*/
 @media (max-width: 375px){
 	div[class*="parallax"] {
-		background-image: url("https://images.unsplash.com/photo-1449034446853-66c86144b0ad?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7402cc297bdfbb4a4856e764971dc013&auto=format&fit=crop&w=1350&q=80");
-		background-size: 500px 100%;
+		background-image: url("https://i.imgur.com/tsr3rpC.jpg");
 		background-attachment: fixed;
 	    background-position: center;
 	    background-repeat: no-repeat;
+		min-height: 100px;
+	}
+	div[class*="paraRow"] {
+		height: 26rem;
 	}
 	div[class*="headerNameSize"] {
 		font-size: 1.5rem;
