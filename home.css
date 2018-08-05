@@ -82,7 +82,37 @@
 	}
 }
 /*iPhoneX end*/
+/*iPhone6/7+ start*/
+@media all and (max-height: 736px){
+    div[class*="aboutmeblock"] {
+        height: 18rem;
+        word-wrap: break-word !important;
+        white-space:normal !important;
+    }
+    div[class*="edublock"] {
+        height: 41rem;
+    }
+    div[class*="awardclubblock"] {
+        height: 41rem;
+    }
 
+}
+/*iPhone6/7+ end*/
+/*iPhone6/7 start*/
+@media all and (max-height: 667px){
+    div[class*="aboutmeblock"] {
+        height: 18rem;
+        word-wrap: break-word !important;
+        white-space:normal !important;
+    }
+    div[class*="edublock"] {
+        height: 30rem;
+    }
+    div[class*="awardclubblock"] {
+        height: 18rem;
+    }
+}
+/*iPhone6/7 end*/
 /*Section CSS start*/
 
 .topsection{
@@ -204,5 +234,16 @@ hr {
 .center{
     margin: auto;
     width: 50%;
+}
+a {
+  color:inherit;
+}
+
+.contactIcon{
+    margin-top: 10px;
+    margin-left:10px;
+}
+.img-thumbnail{
+    background-color: #DCDCDC;
 }
 /*Font Size CSS end*/
