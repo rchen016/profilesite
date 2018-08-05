@@ -8,16 +8,22 @@
     width: 375px;
     height: 300px;
   }
+  .mobileMeSection{
+      display:block !important;
+  }
 }
 @media (max-width: 375px){
     div[class*="meblock"] {
         display:none;
 	}
+    div[class*="mobileheaderDescSize"] {
+        font-size: 25px !important;
+	}
+    div[class*="mobileheaderNameSize"] {
+        font-size: 35px !important;
+	}
     div[class*="mobileMeSection"] {
         background-color: #DCDCDC;
-	}
-    div[class*="mobilepfinfo"] {
-        margin-top: 20px;
 	}
     div[class*="mesectionname"] {
         font-size: 150px;
@@ -107,12 +113,12 @@
 /*Block CSS Start*/
 
 .meblock{
-  height: 13.8rem;
-	background-color:#FFFFFF;
-	font-size:25px;
-	text-align: center;
-	white-space: nowrap;
-  margin-top: 15px;
+    height: 13.8rem;
+    background-color:#FFFFFF;
+    font-size:25px;
+    text-align: center;
+    white-space: nowrap;
+    margin-top: 15px;
 }
 
 .aboutmeblock {
