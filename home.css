@@ -10,7 +10,22 @@
   }
 }
 @media (max-width: 375px){
-  div[class*="parallax"] {
+    div[class*="meblock"] {
+        display:none;
+	}
+    div[class*="mobileMeSection"] {
+        background-color: #DCDCDC;
+	}
+    div[class*="mobilepfinfo"] {
+        margin-top: 20px;
+	}
+    div[class*="mesectionname"] {
+        font-size: 150px;
+	}
+    div[class*="mesectioninfo"] {
+		font-size: 100px;
+	}
+    div[class*="parallax"] {
 		display:none;
 	}
 	div[class*="paraRow"] {
@@ -36,10 +51,10 @@
 		font-size: 1.2rem;
 	}
 	div[class*="aboutmeblock"] {
-		height: 10rem;
+		height: 13rem;
 	}
 	div[class*="edublock"] {
-		height: 26.5rem;
+		height: 31rem;
 	}
 	div[class*="educationClasses"] {
 		font-size: .8rem;
@@ -61,6 +76,9 @@
 	}
 }
 /*iPhoneX end*/
+
+/*Section CSS start*/
+
 .topsection{
 	margin-top: 30px;
 }
@@ -68,10 +86,11 @@
 	background-color:#DCDCDC;
 }
 
-.center {
-    margin: auto;
-    width: 50%;
+.mesectionname{
+    margin-top: 50px;
 }
+
+/*Section CSS end*/
 
 .parallax {
     /* The image used */
@@ -85,6 +104,8 @@
     background-size: cover;
 }
 
+/*Block CSS Start*/
+
 .meblock{
   height: 13.8rem;
 	background-color:#FFFFFF;
@@ -96,7 +117,7 @@
 
 .aboutmeblock {
 	/*height:320px;*/
-	height: 25rem;
+	height: 200px;
 	background-color:#DCDCDC;
 	font-size:25px;
 	text-align: center;
@@ -104,22 +125,22 @@
 }
 
 .edublock {
-	height:595px;
-	background-color:#FFFFFF;
-	font-size:36px;
-	text-align: center;
-}
-
-.awardclubblock {
-	height: 460px;
+	height:565px;
 	background-color:#FFFFFF;
 	font-size:36px;
 	text-align: center;
 }
 
 .skillblock {
-	height:350px;
+	height:230px;
 	background-color:#DCDCDC;
+	font-size:36px;
+	text-align: center;
+}
+
+.awardclubblock {
+	height: 390px;
+	background-color:#FFFFFF;
 	font-size:36px;
 	text-align: center;
 }
@@ -131,6 +152,9 @@
 	text-align: center;
 }
 
+/*Block CSS end*/
+
+/*Font Sizes start*/
 #body-text {
   top: 0;
   position: absolute;
@@ -167,7 +191,12 @@ hr {
 	margin-bottom: 10px
 }
 
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
+.headerFont{
+    font-family: 'Anton', sans-serif;
 }
+
+.center{
+    margin: auto;
+    width: 50%;
+}
+/*Font Size CSS end*/
