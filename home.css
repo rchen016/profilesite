@@ -113,6 +113,80 @@
     }
 }
 /*iPhone6/7 end*/
+
+/*MBP13inch start*/
+@media all and (max-width: 1300px){
+    div[class*="aboutmeblock"] {
+        height: 15rem;
+        word-wrap: break-word !important;
+        white-space:normal !important;
+    }
+    div[class*="edublock"] {
+        height: 35rem;
+    }
+    div[class*="awardclubblock"] {
+        height: 22rem;
+    }
+}
+@media all and (max-width: 1199px){
+    div[class*="meblock"] {
+        height: 40rem;
+        word-wrap: break-word !important;
+        white-space:normal !important;
+    }
+    div[class*="aboutmeblock"] {
+        height: 12rem;
+    }
+}
+@media all and (max-width: 991px){
+    div[class*="meblock"] {
+        height: 33rem;
+    }
+    div[class*="aboutmeblock"] {
+        height: 12rem;
+    }
+    div[class*="awardclubblock"] {
+        height: 27rem;
+    }
+}
+
+@media all and (max-width: 766px){
+    div[class*="aboutmeblock"] {
+        height: 17rem;
+    }
+    div[class*="awardclubblock"] {
+        height: 29rem;
+    }
+    div[class*="edublock"] {
+        height: 38rem;
+    }
+}
+
+@media all and (max-width: 485px){
+    div[class*="aboutmeblock"] {
+        height: 17rem;
+    }
+    div[class*="edublock"] {
+        height: 38rem;
+    }
+    div[class*="awardclubblock"] {
+        height: 32rem;
+    }
+}
+
+@media all and (max-width: 429px){
+    div[class*="awardclubblock"] {
+        height: 36rem;
+    }
+}
+
+@media all and (max-width: 421px){
+    div[class*="awardclubblock"] {
+        height: 40rem;
+    }
+}
+/*MBP13inch end*/
+
 /*Section CSS start*/
 
 .topsection{
@@ -242,8 +316,14 @@ a {
 .contactIcon{
     margin-top: 10px;
     margin-left:10px;
+    margin-right: 10px;
 }
 .img-thumbnail{
     background-color: #DCDCDC;
+}
+.contactIconCC{
+    margin-top:10px;
+    float:left;
+    margin-left: 10px;
 }
 /*Font Size CSS end*/
