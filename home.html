@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<link rel="stylesheet" href="home.css" />
 		<link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<title>Ricky Chen</title>
 	</head>
 	<body>
@@ -33,7 +34,7 @@
 									<a class="dropdown-item" href="#awardclubsection">Awards</a>
 									<a class="dropdown-item" href="#awardclubsection">Clubs</a>
 									<div class="dropdown-divider"></div>
-									<a class="dropdown-item" href="#miscsection">Misc</a>
+									<a class="dropdown-item" href="#contactsection">Contacts</a>
 								</div>
 							</li>
 						</ul>
@@ -45,11 +46,17 @@
 				</nav>
 				<!-- Nav Bar End -->
 			</div>
-			<div class="row paraRow">
-				<div class="parallax img-responsive col col-lg-9 col-sm-12"></div>
+			<div class="row">
+				<div class="paraRow test2 parallax col col-lg-9 col-sm-12"></div>
 			</div>
 			<div class="row">
-				<div class="col col-lg-3 col-sm-12 float-right center">
+				<div>
+						<img class="mobileNoParallax" style="display:none" src="https://images.unsplash.com/photo-1457030642598-b037296c9296?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b0cee8af04565ee4de4477cb5dcbabf8&auto=format&fit=crop&w=750&q=80" height="42" width="42">
+				</div>
+			</div>
+			</row>
+			<div class="row">
+				<div id="mesection" class="meblock col col-lg-3 col-sm-12 float-right center">
 					<div class="float-right">
 						<a href="https://www.linkedin.com/in/ricky-chen-2b24b562"> <img src="https://i.imgur.com/unXrwuh.png" class="img-thumbnail" /> </a>
 					</div>
@@ -59,13 +66,13 @@
 					<div  class="headerDescSize RokkittFont">
 						BS in Computer Science<br/>
 						San Francisco, California<br/><br/>
-						******10@gmail.com<br/><br/>
-						(415) 6**-***8<br/><br/>
+						rickychen10@gmail.com<br/><br/>
+						(415) 608-4948<br/><br/>
 					</div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="aboutmeblock col col-lg-12 RokkittFont">
+				<div id="aboutmesection" class="aboutmeblock col col-lg-12 RokkittFont">
 					<div class="infoHeaderSize">
 						About Me:
 					</div>
@@ -76,7 +83,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="edublock RokkittFont col col-lg-12">
+				<div id="edusection" class="edublock RokkittFont col col-lg-12">
 					<div class="infoHeaderSize">
 						Education:
 					</div>
@@ -104,7 +111,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="skillblock RokkittFont col col-lg-12">
+				<div id="skillsection" class="skillblock RokkittFont col col-lg-12">
 					<div class="infoHeaderSize">
 						Skill:
 					</div>
@@ -127,7 +134,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="awardclubblock RokkittFont col col-lg-12">
+				<div id="awardclubsection" class="awardclubblock RokkittFont col col-lg-12">
 					<div class="infoHeaderSize">
 						Awards:
 					</div>
@@ -145,9 +152,12 @@
 					</div>
 				</div>
 			</div>
-			<div class="bottomsection"></div>
+			<div id="contactsection" class="contactblock">
+				<i class="fa fa-copyright"> Ricky Chen</i>
+			</div>
 		</div>
 		<!-- Bootstrap -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" crossorigin="anonymous"></script>
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
