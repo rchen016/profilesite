@@ -2,18 +2,16 @@
     overflow: hidden;
 }
 /*iPhoneX start*/
-@media all and (max-width: 375px){
-  .mobileNoParallax{
-    display:block !important;
-    width: 375px;
-    height: 300px;
-  }
-  .mobileMeSection{
+@media (min-width: 375px) and (min-height: 812px) and (max-width: 376px) and (max-height: 813px) {
+    .mobileNoParallax{
       display:block !important;
-  }
-}
-@media (max-width: 375px){
-    div[class*="meblock"] {
+      width: 375px;
+      height: 300px;
+    }
+    .mobileMeSection{
+        display:block !important;
+    }
+    div[class*="meinfoblock"] {
         display:none;
 	}
     div[class*="mobileheaderDescSize"] {
@@ -69,7 +67,7 @@
 		height: 14rem;
 	}
 	div[class*="awardclubblock"] {
-		height: 19.5rem;
+		height: 18rem;
 	}
     div[class*="contactblock"] {
 		height: 3.5rem;
@@ -81,25 +79,44 @@
         margin-left: 10px;
 	}
 }
-/*iPhoneX end*/
-/*iPhone6/7+ start*/
-@media all and (max-height: 736px){
-    div[class*="aboutmeblock"] {
-        height: 18rem;
-        word-wrap: break-word !important;
-        white-space:normal !important;
-    }
-    div[class*="edublock"] {
-        height: 41rem;
-    }
-    div[class*="awardclubblock"] {
-        height: 41rem;
-    }
 
-}
-/*iPhone6/7+ end*/
-/*iPhone6/7 start*/
-@media all and (max-height: 667px){
+/*iPhone6/7/8 start*/
+@media (min-width: 375px) and (min-height: 667px) and (max-width: 376px) and (max-height: 668px) {
+    .mobileNoParallax{
+      display:block !important;
+      width: 375px;
+      height: 300px;
+    }
+    .mobileMeSection{
+        display:block !important;
+    }
+    .img-thumbnail{
+        background-color: #FFF !important;
+        border: none;
+    }
+    div[class*="paraRow"] {
+        display:none !important;
+	}
+    div[class*="meinfoblock"] {
+        display:none !important;
+	}
+    div[class*="edublock"] {
+        background-color: #FFF !important;
+        height: 43rem !important;
+	}
+    div[class*="skillblock"] {
+        background-color: #DCDCDC !important;
+	}
+    div[class*="awardclubblock"] {
+        background-color: #FFF !important;
+        height: 40rem !important;
+	}
+    div[class*="mobileheaderDescSize"] {
+        font-size: 25px !important;
+	}
+    div[class*="mobileheaderNameSize"] {
+        font-size: 35px !important;
+	}
     div[class*="aboutmeblock"] {
         height: 18rem;
         word-wrap: break-word !important;
@@ -109,84 +126,28 @@
         height: 30rem;
     }
     div[class*="awardclubblock"] {
-        height: 18rem;
+        height: 25rem !important;
     }
+    div[class*="contactblock"] {
+        font-size: 30px;
+        height: 3rem !important;
+    }
+    div[class*="infoDescSize"] {
+        font-size: 25px;
+    }
+
 }
-/*iPhone6/7 end*/
+/*iPhone6/7/8 start*/
 
 /*MBP13inch start*/
-@media all and (max-width: 1300px){
-    div[class*="aboutmeblock"] {
-        height: 15rem;
-        word-wrap: break-word !important;
-        white-space:normal !important;
-    }
-    div[class*="edublock"] {
-        height: 35rem;
-    }
-    div[class*="awardclubblock"] {
-        height: 22rem;
-    }
-}
-@media all and (max-width: 1199px){
-    div[class*="meblock"] {
+@media (min-width: 1199px) and (min-height: 590px) and (min-width: 1200px) and (min-height: 591px){
+    div[class*="meinfoblock"] {
         height: 40rem;
         word-wrap: break-word !important;
         white-space:normal !important;
-    }
-    div[class*="aboutmeblock"] {
-        height: 12rem;
-    }
-}
-@media all and (max-width: 991px){
-    div[class*="meblock"] {
-        height: 33rem;
-    }
-    div[class*="aboutmeblock"] {
-        height: 12rem;
-    }
-    div[class*="awardclubblock"] {
-        height: 27rem;
-    }
-}
-
-@media all and (max-width: 766px){
-    div[class*="aboutmeblock"] {
-        height: 17rem;
-    }
-    div[class*="awardclubblock"] {
-        height: 29rem;
-    }
-    div[class*="edublock"] {
-        height: 38rem;
-    }
-}
-
-@media all and (max-width: 485px){
-    div[class*="aboutmeblock"] {
-        height: 17rem;
-    }
-    div[class*="edublock"] {
-        height: 38rem;
-    }
-    div[class*="awardclubblock"] {
-        height: 32rem;
-    }
-}
-
-@media all and (max-width: 429px){
-    div[class*="awardclubblock"] {
-        height: 36rem;
-    }
-}
-
-@media all and (max-width: 421px){
-    div[class*="awardclubblock"] {
-        height: 40rem;
     }
 }
 /*MBP13inch end*/
-
 /*Section CSS start*/
 
 .topsection{
@@ -216,7 +177,7 @@
 
 /*Block CSS Start*/
 
-.meblock{
+.meinfoblock{
     height: 13.8rem;
     background-color:#FFFFFF;
     font-size:25px;
@@ -325,5 +286,9 @@ a {
     margin-top:10px;
     float:left;
     margin-left: 10px;
+}
+.mobheader{
+    float:left;
+    width: 100%;
 }
 /*Font Size CSS end*/
