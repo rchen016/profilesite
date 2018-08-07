@@ -498,4 +498,13 @@ a {
 .projectDescFont{
 	color: #FFF;
 }
+
+.carousel-inner{
+  width:100%;
+  max-height: 700px !important;
+}
+
+.w-100{
+	max-height:500px !important;
+}
 /*Project 1 Modal end*/
