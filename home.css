@@ -376,6 +376,7 @@
 	background-color:#708090;
 	font-size:36px;
 	text-align: center;
+    width:100%;
 }
 
 /*Block CSS end*/
@@ -445,5 +446,10 @@ a {
 .mobheader{
     float:left;
     width: 100%;
+}
+.full-width-div {
+    position: absolute;
+    width: 100%;
+    left: 0;
 }
 /*Font Size CSS end*/
