@@ -453,3 +453,49 @@ a {
     left: 0;
 }
 /*Font Size CSS end*/
+
+/*Project 1 Modal*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    padding-top: 100px;
+    width: 100%;
+    height: 100%;
+	overflow: auto;
+    background-color: rgba(0,0,0,1);
+}
+
+.modal-content {
+    height: 50%;
+    width: 50%;
+	margin: auto;
+	background-color: rgba(0,0,0,1);
+}
+
+.close {
+	background-color: black;
+	color: #FFF;
+	width: 15px;
+	height: 25px;
+}
+
+.close:hover,
+.close:focus {
+    color: rgba(0,0,0,1);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  margin-top: 200px;
+}
+
+.carousel-indicators{
+	bottom: -180px;
+}
+
+.projectDescFont{
+	color: #FFF;
+}
+/*Project 1 Modal end*/
