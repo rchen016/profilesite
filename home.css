@@ -334,11 +334,9 @@
 
 .meinfoblock{
     height: 13.8rem;
-    background-color:#FFFFFF;
-    font-size:25px;
+    font-size:55px;
     text-align: center;
     white-space: nowrap;
-    margin-top: 15px;
 }
 
 .aboutmeblock {
@@ -508,3 +506,42 @@ a {
 	max-height:500px !important;
 }
 /*Project 1 Modal end*/
+
+.topInfoDiv{
+	background-color: #FFFFFF;
+	height: 22rem;
+	margin: auto;
+	margin-top: 173px;
+}
+
+/*********************************************/
+/*Site Revamp
+/*********************************************/
+
+/*Font and Styleing*/
+.sendToBottom {
+    position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.headShotMainDiv{
+	height: 65vh;
+}
+
+.piiSizingName{
+	font-size: 7.5vh;
+	text-shadow: 2px 2px white;
+}
+
+.piiSizingInfo{
+	font-size: 2.5vh;
+	font-weight: bold;
+	color: white;
+	text-shadow: 3px 3px black;
+}
+/*End Font and Styling*/
+
+/*********************************************/
+/*End Site Revamp
+/*********************************************/
