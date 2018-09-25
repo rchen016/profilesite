@@ -521,8 +521,11 @@ a {
 /*Font and Styleing*/
 .sendToBottom {
     position: absolute;
-	left: 0;
 	bottom: 0;
+}
+
+.sendToLeftHeadshot{
+
 }
 
 .headShotMainDiv{
@@ -531,14 +534,46 @@ a {
 
 .piiSizingName{
 	font-size: 7.5vh;
-	text-shadow: 2px 2px white;
+	margin-top: 55px;
 }
 
 .piiSizingInfo{
-	font-size: 2.5vh;
+	font-size: 1.5vh;
+}
+
+.piiInfoHeader{
 	font-weight: bold;
-	color: white;
-	text-shadow: 3px 3px black;
+	font-size: 2.5vh;
+}
+
+.piiBackground{
+	height: 470px;
+	width: 470px;
+	background-color: #DCDCDC;
+}
+
+.mainPiiDiv{
+	height: 470px;
+	width: 470px;
+	padding-left: 110px;
+}
+
+.headShotPic{
+	height: 470px;
+	width: 470px;
+}
+
+.fadeInEffect{
+	animation: fadein 4s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.containerOveride{
+	max-width: 100%;
 }
 /*End Font and Styling*/
 
