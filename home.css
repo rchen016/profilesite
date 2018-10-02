@@ -322,12 +322,11 @@
     /* The image used */
     background-image: url("https://images.unsplash.com/photo-1449034446853-66c86144b0ad?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7402cc297bdfbb4a4856e764971dc013&auto=format&fit=crop&w=1350&q=80");
     /* Set a specific height */
-    min-height: 573px;
     /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	min-height: 100vh;
 }
 
 /*Block CSS Start*/
@@ -528,10 +527,10 @@ a {
 
 }
 
-.headShotMainDiv{
+ .headShotMainDiv{
 	height: 65vh;
 }
-
+/*
 .piiSizingName{
 	font-size: 7.5vh;
 	margin-top: 55px;
@@ -565,7 +564,7 @@ a {
 
 .fadeInEffect{
 	animation: fadein 4s;
-}
+} */
 
 @keyframes fadein {
     from { opacity: 0; }
@@ -574,6 +573,19 @@ a {
 
 .containerOveride{
 	max-width: 100%;
+	padding: 0px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Rubik', sans-serif;
 }
 /*End Font and Styling*/
 
