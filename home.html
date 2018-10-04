@@ -14,7 +14,7 @@
 	<body>
 		<div id="page" class="container containerOveride">
 			<!-- Nav Bar Start -->
-			<nav class="navbar navbar-expand-lg navbar-light bg-light col col-lg-12">
+			<nav class="navbar bg-primary navbar-dark navbar-expand-md fixed-top">
 				<a class="navbar-brand" href="#">Welcome!</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -47,7 +47,7 @@
 			</nav>
 				<!-- Nav Bar End -->
 			<section class="parallax text-white d-flex justify-content-center align-items-center">
-				<div class="container text-center text-bottom">
+				<div class="container text-center text-bottom fadeInEffect">
 			      <h1 class="display-1 text-primary text-uppercase">Ricky Chen</h1>
 			      <p class="display-4 d-none d-sm-block">BS in Computer Science</p>
 			      <p class="lead">San Francisco, California</p>
@@ -56,13 +56,134 @@
 			    </div>
 			</section>
 			<div class="container">
+
 				<section>
-					<h2 class="display-4 text-center">About Me:</h2>
-					<p>
-						My name is Ricky.
-						When I am not working, I enjoy watching sports and fitness.
-						I am currently working in the Digital Adveristing World.
-					</p>
+				  <h2 class="display-4 text-center">Hmm</h2>
+
+				  <div class="row">
+					<div class="col-12 col-sm-6 col-lg-4 d-flex flex-column align-items-center mb-5">
+					  <div class="h1"><i class="fa fa-graduation-cap mb-4 text-info" aria-hidden="true"></i></div>
+					  <h3 class="h4 mb-4 text-center">Education</h3>
+					  <p>
+						  UC Riverside 2015<br />
+						  Bachelor of Science in Computer Science <br />
+					  </p>
+					 <!-- <button id="project1ModalBtn" class="btn btn-dark btn-lg">Class Taken</button> -->
+						<div class="row">
+							<div id="project1Modal" class="modal">
+								<div class="modal-content">
+									<span class="close">&times;</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-4 d-flex flex-column align-items-center mb-5">
+					  <div class="h1"><i class="fa fa-award mb-4 text-info" aria-hidden="true"></i></div>
+					  <h3 class="h4 mb-4 text-center">Awards</h3>
+					  <p>
+						 Hearst Autos 2018 First Mover Award - Stellar Performance
+					  </p>
+				 <!--	  <button id="project1ModalBtn" class="btn btn-dark btn-lg">Details...</button>-->
+						<div class="row">
+							<div id="project1Modal" class="modal">
+								<div class="modal-content">
+									<span class="close">&times;</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-4 d-flex flex-column align-items-center mb-5">
+					  <div class="h1"><i class="fa fa-sitemap mb-4 text-info" aria-hidden="true"></i></div>
+					  <h3 class="h4 mb-4 text-center">Clubs</h3>
+					  <p>
+						  <p class="text-center">Association for Computing Machinery</p>
+						  <p class="text-center">Pi Kappa Alpha Fraternity</p>
+					  </p>
+				 <!--	  <button id="project1ModalBtn" class="btn btn-dark btn-lg">Details...</button>-->
+						<div class="row">
+							<div id="project1Modal" class="modal">
+								<div class="modal-content">
+									<span class="close">&times;</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				  </div>
+				</section>
+
+
+
+
+				<section>
+				  <h2 class="display-4 text-center">Information</h2>
+				  <div class="row">
+					<div class="col-12 col-md-4 mb-4">
+					  <div class="card card-outline-success">
+						<div class="card-header bg-success text-white text-center">
+						  <h2>Education</h2>
+						</div>
+						<div class="card-body">
+						  <p class="card-text text-center">
+							  UC Riverside 2015<br />
+	  						  Bachelor of Science in Computer Science <br />
+						  </p>
+						</div>
+						<!--<ul class="list-group">
+						  <li class="list-group-item"><i aria-hidden="true"></i> Machine Organisation & Assembly Programming (CS 61)</li>
+						  <li class="list-group-item"><i aria-hidden="true"></i> Software Construction (CS 100)</li>
+						  <li class="list-group-item"><i aria-hidden="true"></i> Discrete Structures (CS 111)</li>
+						  <li class="list-group-item"><i aria-hidden="true"></i> Discrete Structures (CS 111)</li>
+						  <li class="list-group-item"><i aria-hidden="true"></i> Logic Design (CS 120A)</li>
+						  <li class="list-group-item"><i aria-hidden="true"></i>Introduction to Embedded Systems (CS 120B)</li>
+						  <li class="list-group-item"><i aria-hidden="true"></i> Computer Graphics (CS 130)</li>
+						  <li class="list-group-item"><i aria-hidden="true"></i> Intermediate Data Structures and Algorithms (CS 141)</li>
+						  <li class="list-group-item"><i aria-hidden="true"></i> Automata and Formal Languages (CS 150)</li>
+						  <li class="list-group-item"><i aria-hidden="true"></i> Computer Security (CS 165)</li>
+						  <li class="list-group-item"><i aria-hidden="true"></i> Mobile Wireless (CS 169)</li>
+						  <li class="list-group-item"><i aria-hidden="true"></i> Share on Instagram</li>
+						  <li class="list-group-item"><i aria-hidden="true"></i>Modeling and Simulation (CS 177)</li>
+						  <li class="list-group-item"><i aria-hidden="true"></i> Intro to Software Engineering (CS 180)</li>
+					  </ul>-->
+						<div class="card-footer text-center">
+						  <button id="project1ModalBtn" class="btn btn-success btn-lg">Class Taken</button>
+							<div class="row">
+								<div id="project1Modal" class="modal">
+									<div class="modal-content">
+										<span class="close">&times;</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					  </div>
+					</div>
+					<div class="col-12 col-md-4 mb-4">
+					  <div class="card card-outline-success">
+						<div class="card-header bg-info text-white text-center">
+						  <h2>Awards</h2>
+						</div>
+						<div class="card-body">
+						  <p class="card-text text-center">Hearst Autos 2018 First Mover Award - Stellar Performance</p>
+						</div>
+						<div class="card-footer text-center">
+						  <a href="#" class="btn btn-info btn-lg">Extra Details</a>
+						</div>
+					  </div>
+					</div>
+					<div class="col-12 col-md-4 mb-4">
+					  <div class="card card-outline-success">
+						<div class="card-header bg-dark text-white text-center">
+						  <h2>Clubs</h2>
+						</div>
+						<div class="card-body">
+						  <p class="card-text text-center">Association for Computing Machinery</p>
+						  <p class="card-text text-center">Pi Kappa Alpha Fraternity</p>
+						</div>
+						<div class="card-footer text-center">
+						  <a href="#" class="btn btn-dark btn-lg">Extra Details</a>
+						</div>
+					  </div>
+					</div>
+				  </div>
 				</section>
 				<section>
 					<h2 class="display-4 text-center">Skill:</h2>
@@ -95,29 +216,29 @@
 			            <div class="carousel-item active">
 			              <img src="https://i.imgur.com/WKtp3tr.png" alt="Slide #1" class="d-block img-fluid">
 			              <div class="carousel-caption">
-			                <h3 class="display-4">At night</h3>
-			                <p>Use Cameo at night when going out with friends.</p>
+			                <h3 class="display-4">Project 1</h3>
+			                <p>Bacon ipsum dolor amet beef ribs pork chop pastrami spare ribs, </p>
 			              </div>
 			            </div>
 			            <div class="carousel-item">
 			              <img src="https://i.imgur.com/XRU70ns.png" alt="Slide #2" class="d-block img-fluid">
 			              <div class="carousel-caption">
-			                <h3 class="display-4">Outside</h3>
-			                <p>Use Cameo outside when hiking in the nature.</p>
+							  <h3 class="display-4">Project 2</h3>
+  			                <p>Bacon ipsum dolor amet beef ribs pork chop pastrami spare ribs, </p>
 			              </div>
 			            </div>
 			            <div class="carousel-item">
 			              <img src="https://i.imgur.com/0TkIxSh.png" alt="Slide #3" class="d-block img-fluid">
 			              <div class="carousel-caption">
-			                <h3 class="display-4">In the sun</h3>
-			                <p>Use Cameo even with strong and direct sun.</p>
+							  <h3 class="display-4">Project 3</h3>
+   						   <p>Bacon ipsum dolor amet beef ribs pork chop pastrami spare ribs, </p>
 			              </div>
 			            </div>
 			            <div class="carousel-item">
 			              <img src="https://i.imgur.com/mUkARML.png" alt="Slide #4" class="d-block img-fluid">
 			              <div class="carousel-caption">
-			                <h3 class="display-4">In the distance</h3>
-			                <p>Use Cameo to take clear photos of objects far away.</p>
+							  <h3 class="display-4">Project 4</h3>
+  			                <p>Bacon ipsum dolor amet beef ribs pork chop pastrami spare ribs, </p>
 			              </div>
 			            </div>
 			          </div>
@@ -132,165 +253,48 @@
 			        </div>
 				</section>
 			</div>
-
-			<div class="row">
-				<div id="edusection" class="edublock col col-lg-12">
-					<div class="infoHeaderSize headerFont">
-						Education:
-					</div>
-					<hr />
-					<div class="educationHeaders">
-						UC Riverside 2015<br />
-						Bachelor of Science in Computer Science <br />
-						Coursework: <br />
-					</div>
-					<div class="educationClasses educationFont">
-						Machine Organisation & Assembly Programming (CS 61) <br />
-						Software Construction (CS 100) <br />
-						Discrete Structures (CS 111) <br />
-						Logic Design (CS 120A) <br />
-						Introduction to Embedded Systems (CS 120B) <br />
-						Computer Graphics (CS 130) <br />
-						Intermediate Data Structures and Algorithms (CS 141) <br />
-						Automata and Formal Languages (CS 150) <br />
-						Design and Architecture of Computer Systems (CS 161) <br />
-						Computer Security (CS 165) <br />
-						Mobile Wireless (CS 169) <br />
-						Modeling and Simulation (CS 177) <br />
-						Intro to Software Engineering (CS 180) <br />
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div id="skillsection" class="skillblock RokkittFont col col-lg-12">
-					<div class="infoHeaderSize headerFont">
-						Skills:
-					</div>
-					<hr />
-					<div class="progress skillmargin">
-						<div class="progress-bar bg-success" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><b>C++</b></div>
-					</div>
-					<div class="progress skillmargin">
-						<div class="progress-bar" role="progressbar bg-warning" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"><b>Python</b></div>
-					</div>
-					<div class="progress skillmargin">
-						<div class="progress-bar bg-success" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"><b>HTML/CSS/JS</b></div>
-					</div>
-					<div class="progress skillmargin">
-						<div class="progress-bar bg-info" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"><b>Excel VBA</b></div>
-					</div>
-					<div class="progress skillmargin">
-						<div class="progress-bar bg-success" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"><b>Excel</b></div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div id="awardclubsection" class="awardclubblock col col-lg-12">
-					<div class="infoHeaderSize headerFont">
-						Awards:
-					</div>
-					<hr />
-					<div class="infoDescSize RokkittFont">
-						Hearst Autos 2018 First Mover Award - Stellar Performance
-					</div>
-					<div class="infoHeaderSize headerFont">
-						Clubs:
-					</div>
-					<hr />
-					<div class="infoDescSize RokkittFont">
-						Association for Computing Machinery (ACM)<br />
-						Pi Kappa Alpha Fraternity <br />
-					</div>
-				</div>
-			</div>
-			<!--Project 1 start -->
-			<div class="row">
-				<button id="project1ModalBtn">Project 1</button>
-				<!-- Carosel -->
-				<div id="project1Modal" class="modal">
-					<div class="modal-content">
-						<span class="close">&times;</span>
-						<div class="row">
-							<div id="project1CarouselIndicators" class="carousel slide" data-ride="carousel">
-								<ol class="carousel-indicators">
-									<li data-target="#project1CarouselIndicators" data-slide-to="0" class="active"></li>
-									<li data-target="#project1CarouselIndicators" data-slide-to="1"></li>
-									<li data-target="#project1CarouselIndicators" data-slide-to="2"></li>
-								</ol>
-								<div class="carousel-inner">
-									<div class="carousel-item active">
-										<img class="d-block w-100" src="https://i.imgur.com/uYMKQ5g.png" alt="First slide">
-										<div>
-											<span class="projectDescFont">
-												This is an automation script written with CasperJS library. Everything is ran through CMD/Terminal.
-												A brief description of what it does is, it scraps a list of URLs for all GPT implementations and returns desired custom criteria.
-												Features it includes: entering credentials for staging websites, infinite scrolling scraping, GPT spec mapping comparisons.
-											</span>
-										</div>
-									</div>
-									<div class="carousel-item">
-										<img class="d-block w-100" src="https://i.imgur.com/cxlvoD6.png" alt="Second slide">
-										<div>
-											<span class="projectDescFont">
-												This first script does all the scraping of the list of URLs. This includes entering zipcodes, bypassing popups and inifinite scrolling for lazy loaded ads.
-											</span>
-										</div>
-									</div>
-									<div class="carousel-item">
-										<img class="d-block w-100" src="https://i.imgur.com/8R55YsY.png" alt="Second slide">
-										<div>
-											<span class="projectDescFont">
-												This second script takes all the requested Urls retrieved from the first script and decodes it
-											</span>
-										</div>
-									</div>
-									<div class="carousel-item">
-										<img class="d-block w-100" src="https://i.imgur.com/rism3fs.png" alt="Third slide">
-										<div>
-											<span class="projectDescFont">
-												This is the CSV file with all the custom criteria and various checks I implemented.
-											</span>
-										</div>
-									</div>
-								</div>
-								<a class="carousel-control-prev" href="#project1CarouselIndicators" role="button" data-slide="prev">
-									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-									<span class="sr-only">Previous</span>
-								</a>
-								<a class="carousel-control-next" href="#project1CarouselIndicators" role="button" data-slide="next">
-									<span class="carousel-control-next-icon" aria-hidden="true"></span>
-									<span class="sr-only">Next</span>
-								</a>
-
-							</div>
+		</div>
+			<footer class="bg-light">
+				<div class="container py-3 py-sm-5">
+					<div class="row">
+						<div class="col-12 col-sm-6 col-lg-3">
+							<a href="https://www.facebook.com/ricky.chen.52090"><i class="fab fa-facebook-f float-right contactIcon"></i></a>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-3">
+							<a href="https://www.linkedin.com/in/ricky-chen-2b24b562"><i class="fab fa-linkedin-in float-right contactIcon"></i></a>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-3">
+							<a href="mailto:rickychen10@gmail.com?Subject=Interview" target="_top"><i class="fa fa-envelope float-right contactIcon"></i></a>
 						</div>
 					</div>
+					<div class="row">
+			          <div class="col-12 text-center">
+			            <ul class="list-inline">
+			              <li class="list-inline-item">&copy; 2017 Ricky Chen</li>
+			              <li class="list-inline-item">All rights reserved.</li>
+						  <li class="list-inline-item">Terms of use and privacy policy</li>
+			            </ul>
+			          </div>
+				  </div>
 				</div>
-				<script>
-					var modalBtn = document.getElementById('project1ModalBtn');
-					var modal = document.getElementById('project1Modal');
-					var modalSpan = document.getElementsByClassName("close")[0];
-					modalBtn.onclick = function() {
-						modal.style.display = "block";
-					}
-					modalSpan.onclick = function() {
+			</footer>
+			<!-- Class Taken Modal -->
+			<script>
+				var modalBtn = document.getElementById('project1ModalBtn');
+				var modal = document.getElementById('project1Modal');
+				var modalSpan = document.getElementsByClassName("close")[0];
+				modalBtn.onclick = function() {
+					modal.style.display = "block";
+				}
+				modalSpan.onclick = function() {
+					modal.style.display = "none";
+				}
+				window.onclick = function(event) {
+					if (event.target == modal) {
 						modal.style.display = "none";
 					}
-					window.onclick = function(event) {
-						if (event.target == modal) {
-							modal.style.display = "none";
-						}
-					}
-				</script>
-				<!-- Carosel end-->
-			</div>
-			<!--Project 1 end -->
-			<div id="contactsection" class="contactblock full-width-div">
-				<i class="fa fa-copyright contactIconCC"> Ricky Chen</i>
-				<a href="https://www.linkedin.com/in/ricky-chen-2b24b562"><i class="fab fa-linkedin-in float-right contactIcon"></i></a>
-				<a href="mailto:rickychen10@gmail.com?Subject=Interview" target="_top"><i class="fa fa-envelope float-right contactIcon"></i></a>
-				<a href="https://www.facebook.com/ricky.chen.52090"><i class="fab fa-facebook-f float-right contactIcon"></i></a>
-			</div>
+				}
+			</script>
 		<!-- Bootstrap -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" crossorigin="anonymous"></script>
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
