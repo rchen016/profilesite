@@ -25,9 +25,29 @@ h1, h2, h3, h4, h5, h6 {
 /* End Bootstrap Override */
 
 /* Effecs */
-.fadeInEffect{
+.fadeInEffect5{
+	animation: fadein 5s;
+}
+.fadeInEffect7{
 	animation: fadein 7s;
 }
+
+.fadeInEffect9{
+	animation: fadein 9s;
+}
+.fadeInEffect12{
+	animation: fadein 12s;
+}
+.fadeInEffect14{
+	animation: fadein 14s;
+}
+.fadeInEffect16{
+	animation: fadein 16s;
+}
+.fadeInEffect20{
+	animation: fadein 20s;
+}
+
 
 @keyframes fadein {
     from { opacity: 0; }
