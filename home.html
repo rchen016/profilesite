@@ -14,7 +14,7 @@
 	<body>
 		<div class="container containerOveride">
 			<!-- Nav Bar Start -->
-			<nav class="navbar bg-primary navbar-dark navbar-expand-md fixed-top">
+			<nav class="navbar bg-secondary navbar-dark navbar-expand-md fixed-top">
 				<a class="navbar-brand" href="#">Welcome!</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -39,49 +39,52 @@
 								<a class="dropdown-item" target="_blank" href="https://drive.google.com/file/d/0B5wQb3d_8alUR3hDalF0dmhyY1k/view?usp=sharing">Download Resume</a>
 							</div>
 						</li>
+				    </div>
 					</ul>
 				</div>
 			</nav>
 				<!-- Nav Bar End -->
 			<section class="parallaxCover text-white d-flex justify-content-center align-items-center">
 				<div class="container text-center text-bottom fadeInEffect7">
-			      <h1 class="display-1 text-primary text-uppercase">Ricky Chen</h1>
-			      <p class="display-4 d-none d-sm-block">BS in Computer Science</p>
-			      <p class="lead">San Francisco, California</p>
-			      <p class="lead">Email: rickychen10@gmail.com</p>
-				  <p class="lead">(415) 608-4948</p>
+			      <h1 class="display-1 text-secondary text-uppercase">Ricky Chen</h1>
+			      <p class="display-4 text-white d-none d-sm-block">BS in Computer Science</p>
+			      <p class="lead text-white">San Francisco, California</p>
+			      <p class="lead text-white">Email: rickychen10@gmail.com</p>
+				  <p class="lead text-white">(415) 608-4948</p>
 			    </div>
 			</section>
 			<section class="parallaxSkill text-white d-flex justify-content-center align-items-center containerOveride" id="sectionSkillBar">
 				<div class="row">
 					<div class="col-12">
 						<div class="container text-center text-bottom fadeInEffect7">
-					      <h1 class="display-5 text-primary text-uppercase">Professional:</h1>
-					      <p class="display-6 d-none d-sm-block">My Skill Level Breakdown</p>
+					      <h1 class="display-5 text-secondary text-uppercase">Professional:</h1>
+					      <p class="display-6 text-secondary d-none d-sm-block">My Skill Level Breakdown</p>
 					    </div>
 					</div>
 					<div class="col-12">
 						<div class="fadeInEffect20">
 							<div class="progress skillmargin">
-								<div class="progress-bar bg-success" role="progressbar" style="width: 42%;" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100"><b>C++</b></div> <span class="skillBarPercent">42%</span>
+								<div class="progress-bar bg-success" role="progressbar" style="width: 42%;" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100"><b>C++</b></div> <span class="text-secondary">42%</span>
 							</div>
 							<div class="progress skillmargin">
-								<div class="progress-bar" role="progressbar bg-warning" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><b>Python</b></div> <span class="skillBarPercent">50%</span>
+								<div class="progress-bar" role="progressbar bg-warning" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><b>Python</b></div> <span class="text-secondary">50%</span>
 							</div>
 							<div class="progress skillmargin">
-								<div class="progress-bar bg-success" role="progressbar" style="width: 83%;" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"><b>HTML/CSS/JS</b></div> <span class="skillBarPercent">83%</span>
+								<div class="progress-bar bg-success" role="progressbar" style="width: 83%;" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"><b>HTML/CSS/JS</b></div> <span class="text-secondary">83%</span>
 							</div>
 							<div class="progress skillmargin">
-								<div class="progress-bar bg-info" role="progressbar" style="width: 68%;" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100"><b>Excel VBA</b></div> <span class="skillBarPercent">68%</span>
+								<div class="progress-bar bg-info" role="progressbar" style="width: 68%;" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100"><b>Excel VBA</b></div> <span class="text-secondary">68%</span>
 							</div>
 							<div class="progress skillmargin">
-								<div class="progress-bar bg-success" role="progressbar" style="width: 42%;" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100"><b>Excel</b></div> <span class="skillBarPercent">42%</span>
+								<div class="progress-bar bg-success" role="progressbar" style="width: 42%;" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100"><b>Excel</b></div> <span class="text-secondary">42%</span>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
+
 			<section class="parallaxBottom" id="sectionTopInfo">
+
 			  <!--<ul class="list-group">
 		  	  <li class="list-group-item"><i aria-hidden="true"></i> Machine Organisation & Assembly Programming (CS 61)</li>
 		  	  <li class="list-group-item"><i aria-hidden="true"></i> Software Construction (CS 100)</li>
@@ -136,6 +139,7 @@
 					  <p>
 						  <p class="text-center">Association for Computing Machinery</p>
 						  <p class="text-center">Pi Kappa Alpha Fraternity</p>
+						  <span id="sectionProjectSlide"></span>
 					  </p>
 				 <!--	  <button id="project1ModalBtn" class="btn btn-dark btn-lg">Details...</button>-->
 						<div class="row">
@@ -146,8 +150,10 @@
 							</div>
 						</div>
 					</div>
+
 					<div class="col-12 d-flex flex-column align-items-center mb-5">
-						<h2 class="display-4 text-center">Projects:</h2>
+
+						<h2 class="display-4 text-secondary text-center">Projects:</h2>
 						 <div id="carousel" class="carousel slide" data-ride="carousel">
 						   <ol class="carousel-indicators">
 							 <li data-target="#carousel" data-slide-to="0" class="active"></li>
@@ -202,13 +208,13 @@
 				<div class="container py-3 py-sm-5">
 					<div class="row">
 						<div class="col-3 col-sm-6 col-lg-3">
-							<a href="https://www.facebook.com/ricky.chen.52090"><i class="fab fa-facebook-f float-right contactIcon"></i></a>
+							<a href="https://www.facebook.com/ricky.chen.52090"><i class="fab fa-facebook-f text-secondary float-right contactIcon"></i></a>
 						</div>
 						<div class="col-3 col-sm-6 col-lg-3">
-							<a href="https://www.linkedin.com/in/ricky-chen-2b24b562"><i class="fab fa-linkedin-in float-right contactIcon"></i></a>
+							<a href="https://www.linkedin.com/in/ricky-chen-2b24b562"><i class="fab fa-linkedin-in text-secondary float-right contactIcon"></i></a>
 						</div>
 						<div class="col-3 col-sm-6 col-lg-3">
-							<a href="mailto:rickychen10@gmail.com?Subject=Interview" target="_top"><i class="fa fa-envelope float-right contactIcon"></i></a>
+							<a href="mailto:rickychen10@gmail.com?Subject=Interview" target="_top"><i class="fa fa-envelope text-secondary float-right contactIcon"></i></a>
 						</div>
 					</div>
 					<div class="row">
