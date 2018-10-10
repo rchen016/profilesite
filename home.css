@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .parallaxCover {
     /* The image used */
-    background-image: url("https://images.unsplash.com/photo-1527187953783-56a6bde0ddf2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=72575db1e9e2f85edeec2f33215a1fc8&auto=format&fit=crop&w=967&q=80");
+    background-image: url("https://i.imgur.com/21kD2g8.jpg");
     /* Set a specific height */
     /* Create the parallax scrolling effect */
 	background-size: cover;
@@ -89,7 +89,7 @@ h1, h2, h3, h4, h5, h6 {
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
-	min-height: 200vh;
+	min-height: 170vh;
 }
 
 .skillmargin{
@@ -102,6 +102,90 @@ h1, h2, h3, h4, h5, h6 {
 
 .topper{
 	margin-top: 10vh;
+}
+
+/*projectBoxesRowCOL*/
+.projectBoxes11{
+	background-image: url("https://i.imgur.com/TbSBWFc.jpg");
+	background-repeat: no-repeat;
+	min-height: 380px;
+}
+
+.projectBoxes12{
+	background-image: url("https://i.imgur.com/K6k3Gzw.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 380px;
+}
+
+.projectBoxes13{
+	background-image: url("https://i.imgur.com/5VNuEgk.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 380px;
+}
+
+.projectBoxes14{
+	background-image: url("https://i.imgur.com/zn9s9s7.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 380px;
+}
+
+.projectBoxes21{
+	background-color: #f2f2f2;
+	min-height: 380px;
+}
+
+.projectBoxes22{
+	background-color: #f2f2f2;
+	min-height: 380px;
+}
+
+.projectBoxes23{
+	background-color: #f2f2f2;
+	min-height: 380px;
+}
+
+.projectBoxes24{
+	background-color: #f2f2f2;
+	min-height: 380px;
+}
+
+.projectBoxes31{
+	background-color: #f2f2f2;
+	min-height: 380px;
+}
+
+.projectBoxes32{
+	background-color: #f2f2f2;
+	min-height: 380px;
+}
+
+.projectBoxes33{
+	background-color: #f2f2f2;
+	min-height: 380px;
+}
+
+.projectBoxes34{
+	background-color: #f2f2f2;
+	min-height: 380px;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.bottom-center {
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 /*End Font and Styling*/
 
