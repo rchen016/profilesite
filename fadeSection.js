@@ -84,10 +84,10 @@
 	if((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
 		// The element is visible, do something
 		console.log("PB3");
-		$(".projectBoxes31").addClass("fadeInEffect12");
-		$(".projectBoxes32").addClass("fadeInEffect5");
-		$(".projectBoxes33").addClass("fadeInEffect5");
-		$(".projectBoxes44").addClass("fadeInEffect12");
+		$(".projectBoxes31").addClass("fadeInEffect14");
+		$(".projectBoxes32").addClass("fadeInEffect7");
+		$(".projectBoxes33").addClass("fadeInEffect7");
+		$(".projectBoxes34").addClass("fadeInEffect14");
 	}
 	else {
 		// The element is not visible, do something else
