@@ -7,11 +7,40 @@
 	padding: 0px;
 }
 
+.col-12{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.col-sm-6{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.col-md-4{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.col-xl-3{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.col-12{
+	padding-left: 0px;
+	padding-right: 0px;
+}
 .flex-container {
   display: flex;
   flex-direction: row;
 }
-
+.text-secondary{
+	color: #4c4c4c !important;
+}
+.bg-secondary{
+	background-color: #4c4c4c !important;
+}
 body {
   font-family: 'Open Sans', sans-serif;
 }
@@ -59,7 +88,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .parallaxCover {
     /* The image used */
-    background-image: url("https://i.imgur.com/21kD2g8.jpg");
+	background-image: url("https://i.imgur.com/21kD2g8.jpg");
     /* Set a specific height */
     /* Create the parallax scrolling effect */
 	background-size: cover;
@@ -105,15 +134,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*projectBoxesRowCOL*/
+.cardProjectImage11{
+	height: 380px;
+	opacity: .65;
+}
+
+.cardProjectImage11:hover{
+	opacity: 1.1;
+}
 .projectBoxes11{
 	background-image: url("https://i.imgur.com/TbSBWFc.jpg");
 	background-repeat: no-repeat;
+	background-position: center;
 	min-height: 380px;
 }
 
 .projectBoxes12{
 	background-image: url("https://i.imgur.com/K6k3Gzw.png");
 	background-repeat: no-repeat;
+	background-position: center;
 	background-size: cover;
 	min-height: 380px;
 }
@@ -121,6 +160,7 @@ h1, h2, h3, h4, h5, h6 {
 .projectBoxes13{
 	background-image: url("https://i.imgur.com/5VNuEgk.jpg");
 	background-repeat: no-repeat;
+	background-position: center;
 	background-size: cover;
 	min-height: 380px;
 }
@@ -128,6 +168,7 @@ h1, h2, h3, h4, h5, h6 {
 .projectBoxes14{
 	background-image: url("https://i.imgur.com/zn9s9s7.jpg");
 	background-repeat: no-repeat;
+	background-position: center;
 	background-size: cover;
 	min-height: 380px;
 }
@@ -186,6 +227,20 @@ h1, h2, h3, h4, h5, h6 {
     top: 100%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+}
+
+.paraText{
+	font-family: 'Anton', sans-serif;
+}
+
+.footStyle{
+	height: 12.7vh;
+}
+
+.contactIcon{
+	font-size: 5vh;
+	padding-left: 1vh;
+	padding-right: 1vh;
 }
 /*End Font and Styling*/
 
