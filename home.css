@@ -142,6 +142,14 @@ h1, h2, h3, h4, h5, h6 {
 .cardProjectImage11:hover{
 	opacity: 1.1;
 }
+
+.eduModalBtn:hover{
+	opacity: .5;
+}
+
+.contactIcon:hover{
+	opacity: .5;
+}
 .projectBoxes11{
 	background-image: url("https://i.imgur.com/TbSBWFc.jpg");
 	background-repeat: no-repeat;
@@ -231,6 +239,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .paraText{
 	font-family: 'Anton', sans-serif;
+	color: #4c4c4c;
 }
 
 .footStyle{
@@ -242,6 +251,122 @@ h1, h2, h3, h4, h5, h6 {
 	padding-left: 1vh;
 	padding-right: 1vh;
 }
+
+.modal_box{
+    position:absolute;top:20%;left:20%;
+    height:50px;width:30%;
+    background:wheat;
+    display:none;
+}
+
+/*Modal CSS*/
+.modal,
+.modal-box {
+  z-index: 900;
+}
+/*creates transparent backgroud for Modal*/
+.modal-sandbox {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: transparent;
+}
+/*default modal to be hidden*/
+.modal {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgb(0,0,0);
+  background: rgba(0,0,0,.8);
+  overflow: auto;
+}
+
+.modal-box {
+  position: relative;
+  width: 80%;
+  max-width: 920px;
+  margin: 100px auto;
+  animation-name: modalbox;
+  animation-duration: .4s;
+  animation-timing-function: cubic-bezier(0,0,.3,1.6);
+}
+
+.modal-header {
+  padding: 20px 40px;
+  background: #4c4c4c;
+  color: #ffffff;
+}
+
+.modal-body {
+  background: #ECEFF1;
+  padding: 60px 40px;
+}
+
+/* Close Button */
+.close-modal {
+  text-align: right;
+  cursor: pointer;
+}
+
+/* Animation */
+/* allows modal to fall down from top of screen*/
+@-webkit-keyframes modalbox {
+  0% {
+    top: -250px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes modalbox {
+  0% {
+    top: -250px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/* Aditional Styles */
+.modal-trigger, button {
+  top: 50%;
+  left: 50%;
+  padding: 20px 40px;
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  text-decoration: none;
+}
+
+.modal-trigger {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  transition: ease .2s;
+}
+
+button.close-modal {
+  border: 1px solid #333333;
+  outline: none;
+  color: #333333;
+}
+
+
+/*Modal CSS End*/
 /*End Font and Styling*/
 
 /*responsive media*/

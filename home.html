@@ -12,6 +12,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js" crossorigin="anonymous"></script>
 		<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 		<script src="fadeSection.js"></script>
+
 		<title>Ricky Chen</title>
 	</head>
 	<body>
@@ -25,10 +26,10 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav mr-auto">
 						<li class="nav-item">
-							<a class="nav-link" href="#sectionTopInfo">Info</a>
+							<a class="nav-link" href="#sectionSkillBar">Skills</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#sectionSkillBar">Skills</a>
+							<a class="nav-link" href="#sectionTopInfo">Info</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#sectionProjectSlide">Projects</a>
@@ -58,8 +59,6 @@
 					</div>
 				</section>
 			</div>
-
-
 			<section id="sectionSkillBar" class="parallaxSkill text-white d-flex justify-content-center align-items-center containerOveride">
 				<div class="row">
 					<div id="skilBar"  class="col-12">
@@ -91,46 +90,52 @@
 			</section>
 
 			<section class="parallaxBottom" id="sectionTopInfo">
-				  <!--<ul class="list-group">
-			  	  <li class="list-group-item"><i aria-hidden="true"></i> Machine Organisation & Assembly Programming (CS 61)</li>
-			  	  <li class="list-group-item"><i aria-hidden="true"></i> Software Construction (CS 100)</li>
-			  	  <li class="list-group-item"><i aria-hidden="true"></i> Discrete Structures (CS 111)</li>
-			  	  <li class="list-group-item"><i aria-hidden="true"></i> Discrete Structures (CS 111)</li>
-			  	  <li class="list-group-item"><i aria-hidden="true"></i> Logic Design (CS 120A)</li>
-			  	  <li class="list-group-item"><i aria-hidden="true"></i>Introduction to Embedded Systems (CS 120B)</li>
-			  	  <li class="list-group-item"><i aria-hidden="true"></i> Computer Graphics (CS 130)</li>
-			  	  <li class="list-group-item"><i aria-hidden="true"></i> Intermediate Data Structures and Algorithms (CS 141)</li>
-			  	  <li class="list-group-item"><i aria-hidden="true"></i> Automata and Formal Languages (CS 150)</li>
-			  	  <li class="list-group-item"><i aria-hidden="true"></i> Computer Security (CS 165)</li>
-			  	  <li class="list-group-item"><i aria-hidden="true"></i> Mobile Wireless (CS 169)</li>
-			  	  <li class="list-group-item"><i aria-hidden="true"></i> Share on Instagram</li>
-			  	  <li class="list-group-item"><i aria-hidden="true"></i>Modeling and Simulation (CS 177)</li>
-			  	  <li class="list-group-item"><i aria-hidden="true"></i> Intro to Software Engineering (CS 180)</li>
-			    </ul>-->
 				<div class="row">
 					<div id="educationBlock" class="col-12 col-sm-6 col-lg-4 d-flex flex-column align-items-center mb-5 topper">
-					  <div class="h1"><i class="fa fa-graduation-cap text-secondary mb-4" aria-hidden="true"></i></div>
-					  <h3 class="h4 mb-4 text-center">Education</h3>
-					  <p class="text-center">
-						  UC Riverside 2015<br />
-						  Bachelor of Science in Computer Science <br />
-					  </p>
-					 <!-- <button id="project1ModalBtn" class="btn btn-dark btn-lg">Class Taken</button> -->
-						<div class="row">
-							<div id="project1Modal" class="modal">
-								<div class="modal-content">
-									<span class="close">&times;</span>
+						<a href="#" class="modalBtn" data-modal="eduModalName">
+							<div class="h1">
+								<i class="fa fa-graduation-cap text-secondary mb-4 eduModalBtn" aria-hidden="true"></i>
+							</div>
+						</a>
+						<div class="modal" id="eduModalName">
+							<div class="modal-sandbox"></div>
+							<div class="modal-box">
+								<div class="modal-header">
+									<h1>Classes Taken</h1>
+								</div>
+								<div class="modal-body">
+									<ul class="list-group">
+										<li class="list-group-item"><i aria-hidden="true"></i> Machine Organisation & Assembly Programming (CS 61)</li>
+										<li class="list-group-item"><i aria-hidden="true"></i> Software Construction (CS 100)</li>
+										<li class="list-group-item"><i aria-hidden="true"></i> Discrete Structures (CS 111)</li>
+										<li class="list-group-item"><i aria-hidden="true"></i> Discrete Structures (CS 111)</li>
+										<li class="list-group-item"><i aria-hidden="true"></i> Logic Design (CS 120A)</li>
+										<li class="list-group-item"><i aria-hidden="true"></i>Introduction to Embedded Systems (CS 120B)</li>
+										<li class="list-group-item"><i aria-hidden="true"></i> Computer Graphics (CS 130)</li>
+										<li class="list-group-item"><i aria-hidden="true"></i> Intermediate Data Structures and Algorithms (CS 141)</li>
+										<li class="list-group-item"><i aria-hidden="true"></i> Automata and Formal Languages (CS 150)</li>
+										<li class="list-group-item"><i aria-hidden="true"></i> Computer Security (CS 165)</li>
+										<li class="list-group-item"><i aria-hidden="true"></i> Mobile Wireless (CS 169)</li>
+										<li class="list-group-item"><i aria-hidden="true"></i> Share on Instagram</li>
+										<li class="list-group-item"><i aria-hidden="true"></i>Modeling and Simulation (CS 177)</li>
+										<li class="list-group-item"><i aria-hidden="true"></i> Intro to Software Engineering (CS 180)</li>
+								    </ul>
+									<button class="close-modal">Close!</button>
 								</div>
 							</div>
 						</div>
+						  <h3 class="h4 mb-4 text-center">Education</h3>
+						  <p class="text-center">
+							  UC Riverside 2015<br />
+							  Bachelor of Science in Computer Science <br />
+						  </p>
 					</div>
 					<div id="awardsBlock" class="col-12 col-sm-6 col-lg-4 d-flex flex-column align-items-center mb-5 topper">
-					  <div class="h1"><i class="fa fa-award text-secondary mb-4" aria-hidden="true"></i></div>
-					  <h3 class="h4 mb-4 text-center">Awards</h3>
-					  <p class="text-center">
-						 Hearst Autos 2018 First Mover Award - Stellar Performance
-					  </p>
-				 <!--	  <button id="project1ModalBtn" class="btn btn-dark btn-lg">Details...</button>-->
+						<div class="h1"><i class="fa fa-award text-secondary mb-4" aria-hidden="true"></i></div>
+						<h3 class="h4 mb-4 text-center">Awards</h3>
+						<p class="text-center">
+						Hearst Autos 2018 First Mover Award - Stellar Performance
+						</p>
 						<div class="row">
 							<div id="project1Modal" class="modal">
 								<div class="modal-content">
@@ -147,7 +152,6 @@
 						  <p class="text-center">Pi Kappa Alpha Fraternity</p>
 						  <span id="sectionProjectSlide"></span>
 					  </p>
-				 <!--	  <button id="project1ModalBtn" class="btn btn-dark btn-lg">Details...</button>-->
 						<div class="row">
 							<div id="project1Modal" class="modal">
 								<div class="modal-content">
@@ -158,227 +162,163 @@
 					</div>
 				</div>
 				<div id="projectBoxes1" class="row">
-
-					<!--<div class="col-3 projectBoxes11">
-						<div class="container text-center text-bottom vertical-center projectBoxes11Text">
-					      <h1 class="display-5 text-dark text-uppercase">Auto Pilot</h1>
-					    </div>
-					</div>
-					<div class="col-3 projectBoxes12">
-						<div class="container text-center text-bottom vertical-center">
-						  <h1 class="display-5 text-dark text-uppercase">Chat Line</h1>
-						</div>
-					</div>
-					<div class="col-3 projectBoxes13">
-						<div class="container text-center text-bottom vertical-center">
-						  <h1 class="display-5 text-dark text-uppercase">Messenger SQL</h1>
-						</div>
-					</div>
-					<div class="col-3 projectBoxes14">
-						<div class="container text-center text-bottom vertical-center">
-						  <h1 class="display-5 text-dark text-uppercase">Audit VBA Macro</h1>
-						</div>
-					</div>
-
-				-->
 					<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
-						<div class="card">
-							<img class="card-img-top cardProjectImage11" src="https://i.imgur.com/TbSBWFc.jpg" alt="Card image cap">
-							<div class="card-body">
-								<h5 class="card-title text-center display-5 paraText">AutoPilot - JS</h5>
+						<a href="#" class="modalBtn" data-modal="project11Name">
+							<div class="card">
+								<img class="card-img-top cardProjectImage11" src="https://i.imgur.com/TbSBWFc.jpg" alt="Card image cap">
+								<div class="card-body">
+									<h5 class="card-title text-center display-5 paraText">AutoPilot - JS</h5>
+								</div>
+							</div>
+						</a>
+						<div class="modal" id="project11Name">
+							<div class="modal-sandbox"></div>
+							<div class="modal-box">
+								<div class="modal-header">
+									<h1>Auto Pilot</h1>
+								</div>
+								<div class="modal-body">
+									<button class="close-modal">Close!</button>
+								</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
-						<div class="card">
-							<img class="card-img-top cardProjectImage11" src="https://i.imgur.com/K6k3Gzw.png" alt="Card image cap">
-							<div class="card-body">
-								<h5 class="card-title text-center display-5 paraText">Chatline - Java</h5>
+						<a href="#" class="modalBtn" data-modal="project12Name">
+							<div class="card">
+								<img class="card-img-top cardProjectImage11" src="https://i.imgur.com/K6k3Gzw.png" alt="Card image cap">
+								<div class="card-body">
+									<h5 class="card-title text-center display-5 paraText">Chatline - Java</h5>
+								</div>
+							</div>
+						</a>
+						<div class="modal" id="project12Name">
+							<div class="modal-sandbox"></div>
+							<div class="modal-box">
+								<div class="modal-header">
+									<h1>Chatline</h1>
+								</div>
+								<div class="modal-body">
+									<button class="close-modal">Close!</button>
+								</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
-						<div class="card">
-							<img class="card-img-top cardProjectImage11" src="https://i.imgur.com/5VNuEgk.jpg" alt="Card image cap">
-							<div class="card-body">
-								<h5 class="card-title text-center display-5 paraText">Messenger SQL - Java|SQL</h5>
+						<a href="#" class="modalBtn" data-modal="project13Name">
+							<div class="card">
+								<img class="card-img-top cardProjectImage11" src="https://i.imgur.com/5VNuEgk.jpg" alt="Card image cap">
+								<div class="card-body">
+									<h5 class="card-title text-center display-5 paraText">Messenger SQL - Java|SQL</h5>
+								</div>
+							</div>
+						</a>
+						<div class="modal" id="project13Name">
+							<div class="modal-sandbox"></div>
+							<div class="modal-box">
+								<div class="modal-header">
+									<h1>Chatline</h1>
+								</div>
+								<div class="modal-body">
+									<button class="close-modal">Close!</button>
+								</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
-						<div class="card">
-							<img class="card-img-top cardProjectImage11" src="https://i.imgur.com/zn9s9s7.jpg" alt="Card image cap">
-							<div class="card-body">
-								<h5 class="card-title text-center display-5 paraText">Audit Macros - VBA</h5>
+						<a href="#" class="modalBtn" data-modal="project14Name">
+							<div class="card">
+								<img class="card-img-top cardProjectImage11" src="https://i.imgur.com/zn9s9s7.jpg" alt="Card image cap">
+								<div class="card-body">
+									<h5 class="card-title text-center display-5 paraText">Audit Macros - VBA</h5>
+								</div>
+							</div>
+						</a>
+						<div class="modal" id="project14Name">
+							<div class="modal-sandbox"></div>
+							<div class="modal-box">
+								<div class="modal-header">
+									<h1>Chatline</h1>
+								</div>
+								<div class="modal-body">
+									<button class="close-modal">Close!</button>
+								</div>
 							</div>
 						</div>
 					</div>
-
-
 				</div>
-				<div id="projectBoxes1" class="row">
-
-					<!--<div class="col-3 projectBoxes11">
-						<div class="container text-center text-bottom vertical-center projectBoxes11Text">
-					      <h1 class="display-5 text-dark text-uppercase">Auto Pilot</h1>
-					    </div>
-					</div>
-					<div class="col-3 projectBoxes12">
-						<div class="container text-center text-bottom vertical-center">
-						  <h1 class="display-5 text-dark text-uppercase">Chat Line</h1>
-						</div>
-					</div>
-					<div class="col-3 projectBoxes13">
-						<div class="container text-center text-bottom vertical-center">
-						  <h1 class="display-5 text-dark text-uppercase">Messenger SQL</h1>
-						</div>
-					</div>
-					<div class="col-3 projectBoxes14">
-						<div class="container text-center text-bottom vertical-center">
-						  <h1 class="display-5 text-dark text-uppercase">Audit VBA Macro</h1>
-						</div>
-					</div>
-
-				-->
-					<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
-						<div class="card" style="width>:100%;">
-							<img class="card-img-top cardProjectImage11" src="https://i.imgur.com/5e1QaWX.png" alt="Card image cap">
-							<div class="card-body">
-								<h5 class="card-title text-center display-5 paraText">Project #- Language</h5>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
-						<div class="card">
-							<img class="card-img-top cardProjectImage11" src="https://i.imgur.com/5e1QaWX.png" alt="Card image cap">
-							<div class="card-body">
-								<h5 class="card-title text-center display-5 paraText">Project #- Language</h5>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
-						<div class="card">
-							<img class="card-img-top cardProjectImage11" src="https://i.imgur.com/5e1QaWX.png" alt="Card image cap">
-							<div class="card-body">
-								<h5 class="card-title text-center display-5 paraText">Project #- Language</h5>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
-						<div class="card">
-							<img class="card-img-top cardProjectImage11" src="https://i.imgur.com/5e1QaWX.png" alt="Card image cap">
-							<div class="card-body">
-								<h5 class="card-title text-center display-5 paraText">Project #- Language</h5>
-							</div>
-						</div>
-					</div>
-
-
-				</div>
-				<div id="projectBoxes1" class="row">
-
-					<!--<div class="col-3 projectBoxes11">
-						<div class="container text-center text-bottom vertical-center projectBoxes11Text">
-					      <h1 class="display-5 text-dark text-uppercase">Auto Pilot</h1>
-					    </div>
-					</div>
-					<div class="col-3 projectBoxes12">
-						<div class="container text-center text-bottom vertical-center">
-						  <h1 class="display-5 text-dark text-uppercase">Chat Line</h1>
-						</div>
-					</div>
-					<div class="col-3 projectBoxes13">
-						<div class="container text-center text-bottom vertical-center">
-						  <h1 class="display-5 text-dark text-uppercase">Messenger SQL</h1>
-						</div>
-					</div>
-					<div class="col-3 projectBoxes14">
-						<div class="container text-center text-bottom vertical-center">
-						  <h1 class="display-5 text-dark text-uppercase">Audit VBA Macro</h1>
-						</div>
-					</div>
-
-				-->
-					<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
-						<div class="card" style="width>:100%;">
-							<img class="card-img-top cardProjectImage11" src="https://i.imgur.com/5e1QaWX.png" alt="Card image cap">
-							<div class="card-body">
-								<h5 class="card-title text-center display-5 paraText">Project #- Language</h5>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
-						<div class="card">
-							<img class="card-img-top cardProjectImage11" src="https://i.imgur.com/5e1QaWX.png" alt="Card image cap">
-							<div class="card-body">
-								<h5 class="card-title text-center display-5 paraText">Project #- Language</h5>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
-						<div class="card">
-							<img class="card-img-top cardProjectImage11" src="https://i.imgur.com/5e1QaWX.png" alt="Card image cap">
-							<div class="card-body">
-								<h5 class="card-title text-center display-5 paraText">Project #- Language</h5>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
-						<div class="card">
-							<img class="card-img-top cardProjectImage11" src="https://i.imgur.com/5e1QaWX.png" alt="Card image cap">
-							<div class="card-body">
-								<h5 class="card-title text-center display-5 paraText">Project #- Language</h5>
-							</div>
-						</div>
-					</div>
-
-
-				</div>
-				<!--
 				<div id="projectBoxes2" class="row">
-					<div class="col-3 projectBoxes21">
-						<div class="container text-center text-bottom vertical-center">
-						  <h1 class="display-3 text-dark text-uppercase">Project X</h1>
+					<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
+						<div class="card" style="width>:100%;">
+							<img class="card-img-top cardProjectImage11" src="https://i.imgur.com/5e1QaWX.png" alt="Card image cap">
+							<div class="card-body">
+								<h5 class="card-title text-center display-5 paraText">Project #- Language</h5>
+							</div>
 						</div>
 					</div>
-					<div class="col-3 projectBoxes22">
-						<div class="container text-center text-bottom vertical-center">
-						  <h1 class="display-3 text-dark text-uppercase">Project X</h1>
+					<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
+						<div class="card">
+							<img class="card-img-top cardProjectImage11" src="https://i.imgur.com/5e1QaWX.png" alt="Card image cap">
+							<div class="card-body">
+								<h5 class="card-title text-center display-5 paraText">Project #- Language</h5>
+							</div>
 						</div>
 					</div>
-					<div class="col-3 projectBoxes23">
-						<div class="container text-center text-bottom vertical-center">
-						  <h1 class="display-3 text-dark text-uppercase">Project X</h1>
+					<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
+						<div class="card">
+							<img class="card-img-top cardProjectImage11" src="https://i.imgur.com/5e1QaWX.png" alt="Card image cap">
+							<div class="card-body">
+								<h5 class="card-title text-center display-5 paraText">Project #- Language</h5>
+							</div>
 						</div>
 					</div>
-					<div class="col-3 projectBoxes24">
-						<div class="container text-center text-bottom vertical-center">
-						  <h1 class="display-3 text-dark text-uppercase">Project X</h1>
+					<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
+						<div class="card">
+							<img class="card-img-top cardProjectImage11" src="https://i.imgur.com/5e1QaWX.png" alt="Card image cap">
+							<div class="card-body">
+								<h5 class="card-title text-center display-5 paraText">Project #- Language</h5>
+							</div>
 						</div>
 					</div>
+
+
 				</div>
 				<div id="projectBoxes3" class="row">
-					<div class="col-3 projectBoxes31">
-						<div class="container text-center text-bottom vertical-center">
-						  <h1 class="display-3 text-dark text-uppercase">Project X</h1>
+					<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
+						<div class="card" style="width>:100%;">
+							<img class="card-img-top cardProjectImage11" src="https://i.imgur.com/5e1QaWX.png" alt="Card image cap">
+							<div class="card-body">
+								<h5 class="card-title text-center display-5 paraText">Project #- Language</h5>
+							</div>
 						</div>
 					</div>
-					<div class="col-3 projectBoxes32">
-						<div class="container text-center text-bottom vertical-center">
-						  <h1 class="display-3 text-dark text-uppercase">Project X</h1>
+					<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
+						<div class="card">
+							<img class="card-img-top cardProjectImage11" src="https://i.imgur.com/5e1QaWX.png" alt="Card image cap">
+							<div class="card-body">
+								<h5 class="card-title text-center display-5 paraText">Project #- Language</h5>
+							</div>
 						</div>
 					</div>
-					<div class="col-3 projectBoxes33">
-						<div class="container text-center text-bottom vertical-center">
-						  <h1 class="display-3 text-dark text-uppercase">Project X</h1>
+					<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
+						<div class="card">
+							<img class="card-img-top cardProjectImage11" src="https://i.imgur.com/5e1QaWX.png" alt="Card image cap">
+							<div class="card-body">
+								<h5 class="card-title text-center display-5 paraText">Project #- Language</h5>
+							</div>
 						</div>
 					</div>
-					<div class="col-3 projectBoxes34">
-						<div class="container text-center text-bottom vertical-center">
-						  <h1 class="display-3 text-dark text-uppercase">Project X</h1>
+					<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
+						<div class="card">
+							<img class="card-img-top cardProjectImage11" src="https://i.imgur.com/5e1QaWX.png" alt="Card image cap">
+							<div class="card-body">
+								<h5 class="card-title text-center display-5 paraText">Project #- Language</h5>
+							</div>
 						</div>
 					</div>
-				</div>-->
+
+
+				</div>
 			</section>
 			</div>
 			<footer id="1234" class="bg-light">
@@ -396,48 +336,10 @@
 						<a href="https://www.facebook.com/ricky.chen.52090"><i class="fab fa-facebook-f text-secondary float-right contactIcon"></i></a>
 					</div>
 				</div>
-	<!--			<div class="container py-3 py-sm-5 footStyle">
-					<div class="row">
-						<div class="col-3 col-sm-6 col-lg-3">
-							<a href="https://www.facebook.com/ricky.chen.52090"><i class="fab fa-facebook-f text-secondary float-right contactIcon"></i></a>
-						</div>
-						<div class="col-3 col-sm-6 col-lg-3">
-							<a href="https://www.linkedin.com/in/ricky-chen-2b24b562"><i class="fab fa-linkedin-in text-secondary float-right contactIcon"></i></a>
-						</div>
-						<div class="col-3 col-sm-6 col-lg-3">
-							<a href="mailto:rickychen10@gmail.com?Subject=Interview" target="_top"><i class="fa fa-envelope text-secondary float-right contactIcon"></i></a>
-						</div>
-					</div>
-					<div class="row">
-			          <div class="col-12 text-center">
-			            <ul class="list-inline">
-			              <li class="list-inline-item">&copy; 2017 Ricky Chen</li>
-			              <li class="list-inline-item">All rights reserved.</li>
-						  <li class="list-inline-item">Terms of use and privacy policy</li>
-			            </ul>
-			          </div>
-				  </div>
-			  </div>-->
 			</footer>
-			<!-- Class Taken Modal -->
-		<!--	<script>
-				var modalBtn = document.getElementById('project1ModalBtn');
-				var modal = document.getElementById('project1Modal');
-				var modalSpan = document.getElementsByClassName("close")[0];
-				modalBtn.onclick = function() {
-					modal.style.display = "block";
-				}
-				modalSpan.onclick = function() {
-					modal.style.display = "none";
-				}
-				window.onclick = function(event) {
-					if (event.target == modal) {
-						modal.style.display = "none";
-					}
-				}
-			</script>-->
 		<!-- Bootstrap -->
 		<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" crossorigin="anonymous"></script>-->
+		<script src="modal.js"></script>
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
