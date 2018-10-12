@@ -27,7 +27,7 @@
 		// The element is visible, do something
 		$("#educationBlock").addClass("fadeInEffect5");
 		$("#awardsBlock").addClass("fadeInEffect7");
-		$("#clubsBlock").addClass("fadeInEffect9");
+		$("#experienceBlock").addClass("fadeInEffect9");
 	}
 	else {
 		// The element is not visible, do something else

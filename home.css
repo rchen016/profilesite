@@ -139,6 +139,7 @@ h1, h2, h3, h4, h5, h6 {
 	opacity: .65;
 }
 
+/*Hover CSS*/
 .cardProjectImage11:hover{
 	opacity: 1.1;
 }
@@ -147,9 +148,18 @@ h1, h2, h3, h4, h5, h6 {
 	opacity: .5;
 }
 
+.fa-briefcase:hover{
+	opacity: .5;
+}
 .contactIcon:hover{
 	opacity: .5;
 }
+
+.fa-award:hover{
+	opacity: .5;
+}
+/*Hover CSS End*/
+
 .projectBoxes11{
 	background-image: url("https://i.imgur.com/TbSBWFc.jpg");
 	background-repeat: no-repeat;
@@ -242,6 +252,9 @@ h1, h2, h3, h4, h5, h6 {
 	color: #4c4c4c;
 }
 
+.dateRange{
+	font-family: 'Cinzel', serif;
+}
 .footStyle{
 	height: 12.7vh;
 }
@@ -363,6 +376,7 @@ button.close-modal {
   border: 1px solid #333333;
   outline: none;
   color: #333333;
+  margin-top: 1vh;
 }
 
 
