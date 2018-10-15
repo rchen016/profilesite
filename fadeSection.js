@@ -25,9 +25,9 @@
 
 	if((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
 		// The element is visible, do something
-		$("#educationBlock").addClass("fadeInEffect5");
-		$("#awardsBlock").addClass("fadeInEffect7");
-		$("#experienceBlock").addClass("fadeInEffect9");
+		$(".eduSectionText").addClass("fadeInEffect5");
+		$(".awardSectionText").addClass("fadeInEffect7");
+		$(".expSectionText").addClass("fadeInEffect9");
 	}
 	else {
 		// The element is not visible, do something else

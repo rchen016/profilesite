@@ -48,14 +48,15 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Rubik', sans-serif;
 }
 
-.carousel-inner{
-	max-height: 800px !important;
+#carouselProjectIndicators {
+	max-width: 480px !important;
 }
-
-
 /* End Bootstrap Override */
 
 /* Effecs */
+.fadeInEffect3{
+	animation: fadein 3s;
+}
 .fadeInEffect5{
 	animation: fadein 5s;
 }

@@ -46,8 +46,8 @@
 				<!-- Nav Bar End -->
 			<div class="parentParallax">
 				<section class="parallaxCover text-white d-flex justify-content-center align-items-center">
-					<div class="container text-center text-bottom fadeInEffect5">
-					  <h1 class="display-1 text-secondary text-uppercase fadeInEffect7 paraText">Ricky Chen</h1>
+					<div class="container text-center text-bottom">
+					  <h1 class="display-1 text-secondary text-uppercase paraText">Ricky Chen</h1>
 					  <p class="display-4 text-white d-none d-sm-block fadeInEffect7 paraText">BS in Computer Science</p>
 					  <p class="lead text-white fadeInEffect7 paraText">San Francisco, California</p>
 					  <p class="lead text-white fadeInEffect7 paraText">Email: rickychen10@gmail.com</p>
@@ -124,13 +124,13 @@
 								</div>
 							</div>
 						</div>
-						  <h3 class="h4 mb-4 text-center">Education</h3>
+						  <h3 class="h4 mb-4 text-center eduSectionText">Education</h3>
 					</div>
 					<div id="awardsBlock" class="col-12 col-sm-6 col-lg-4 d-flex flex-column align-items-center mb-5 topper">
 						<a href="#" class="modalBtn" data-modal="awardModalName">
 							<div class="h1"><i class="fa fa-award text-secondary mb-4" aria-hidden="true"></i></div>
 						</a>
-						<h3 class="h4 mb-4 text-center">Awards</h3>
+						<h3 class="h4 mb-4 text-center awardSectionText">Awards</h3>
 						<div class="modal" id="awardModalName">
 							<div class="modal-sandbox"></div>
 							<div class="modal-box">
@@ -151,7 +151,7 @@
 							<div class="h1"><i class="fa fa-briefcase text-secondary mb-4" aria-hidden="true"></i></div>
 						</a>
 
-						<h3 class="h4 mb-4 text-center">Experience</h3>
+						<h3 class="h4 mb-4 text-center expSectionText">Experience</h3>
 						<div class="modal" id="expModalName">
 							<div class="modal-sandbox"></div>
 							<div class="modal-box">
@@ -220,9 +220,48 @@
 							<div class="modal-sandbox"></div>
 							<div class="modal-box">
 								<div class="modal-header">
-									<h1>Auto Pilot</h1>
+									<h1>
+										Auto Pilot<br />
+										<h4>Javascript | CasperJs</h4>
+									</h1>
+
 								</div>
 								<div class="modal-body">
+									<div id="carouselProjectIndicators" class="carousel slide">
+										<ol class="carousel-indicators">
+											<li data-target="#carouselProjectIndicators" data-slide-to="0" class="active"></li>
+											<li data-target="#carouselProjectIndicators" data-slide-to="1"></li>
+											<li data-target="#carouselProjectIndicators" data-slide-to="2"></li>
+										</ol>
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<p class="paraText">
+													In this two part script, the first script takes in a text file with URLs you want to be scraped.
+												</p>
+												<img class="d-block" src="https://media.giphy.com/media/PMl0k6dA7eC06EQRqU/giphy.gif" alt="First slide">
+											</div>
+											<div class="carousel-item">
+												<p class="paraText">
+													With the results from script one, it decodes the string and parses it into a CSV
+												</p>
+												<img class="d-block" src="https://media.giphy.com/media/Zvn2ZRUrG714RmPv8u/giphy.gif" alt="Second slide">
+											</div>
+											<div class="carousel-item">
+												<p class="paraText">
+													The final product shows all the desired values and last columns compares results to a mapping.
+												</p>
+												<img class="d-block" src="https://media.giphy.com/media/3eP5pCglzacolFG1RA/giphy.gif" alt="Third slide">
+											</div>
+										</div>
+										<a class="carousel-control-prev" href="#carouselProjectIndicators" role="button" data-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="sr-only">Previous</span>
+										</a>
+										<a class="carousel-control-next" href="#carouselProjectIndicators" role="button" data-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="sr-only">Next</span>
+										</a>
+									</div>
 									<button class="close-modal">Close!</button>
 								</div>
 							</div>
