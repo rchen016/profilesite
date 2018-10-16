@@ -141,7 +141,7 @@ h1, h2, h3, h4, h5, h6 {
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
-	min-height: 170vh;
+	min-height: 140vh;
 }
 
 .skillmargin{
@@ -273,6 +273,11 @@ h1, h2, h3, h4, h5, h6 {
 .paraText{
 	font-family: 'Anton', sans-serif;
 	color: #4c4c4c;
+}
+
+.paraTextGH{
+	font-family: 'Anton', sans-serif;
+	color: #637ee8;
 }
 
 .dateRange{
