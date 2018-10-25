@@ -158,7 +158,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /*projectBoxesRowCOL*/
 .cardProjectImage11{
-	height: 380px;
 	opacity: .65;
 }
 
@@ -187,7 +186,7 @@ h1, h2, h3, h4, h5, h6 {
 	background-image: url("https://i.imgur.com/TbSBWFc.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
-	min-height: 380px;
+
 }
 
 .projectBoxes12{
@@ -195,7 +194,7 @@ h1, h2, h3, h4, h5, h6 {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	min-height: 380px;
+
 }
 
 .projectBoxes13{
@@ -203,7 +202,6 @@ h1, h2, h3, h4, h5, h6 {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	min-height: 380px;
 }
 
 .projectBoxes14{
@@ -211,47 +209,45 @@ h1, h2, h3, h4, h5, h6 {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	min-height: 380px;
 }
 
 .projectBoxes21{
 	background-color: #f2f2f2;
-	min-height: 380px;
+
 }
 
 .projectBoxes22{
 	background-color: #f2f2f2;
-	min-height: 380px;
 }
 
 .projectBoxes23{
 	background-color: #f2f2f2;
-	min-height: 380px;
+
 }
 
 .projectBoxes24{
 	background-color: #f2f2f2;
-	min-height: 380px;
+
 }
 
 .projectBoxes31{
 	background-color: #f2f2f2;
-	min-height: 380px;
+
 }
 
 .projectBoxes32{
 	background-color: #f2f2f2;
-	min-height: 380px;
+
 }
 
 .projectBoxes33{
 	background-color: #f2f2f2;
-	min-height: 380px;
+
 }
 
 .projectBoxes34{
 	background-color: #f2f2f2;
-	min-height: 380px;
+
 }
 
 .vertical-center {
