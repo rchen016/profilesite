@@ -129,7 +129,7 @@ h1, h2, h3, h4, h5, h6 {
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
-	min-height: 110vh;
+	min-height: 105vh;
 }
 
 .parallaxBottom {
@@ -403,7 +403,17 @@ button.close-modal {
   margin-top: 1vh;
 }
 
+#sectionSkillBar{
+	position: relative;
+}
 
+#trio{
+	position: absolute;
+	bottom: 0;
+	max-width: 100%;
+	padding: 0px !important;
+	width: 100%;
+}
 /*Modal CSS End*/
 /*End Font and Styling*/
 

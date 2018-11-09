@@ -10,28 +10,13 @@
 	if((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
 		// The element is visible, do something
 		$("#percentBars").addClass("fadeInEffect7");
+		$(".eduSectionText").addClass("fadeInEffect5");
+		$(".awardSectionText").addClass("fadeInEffect7");
+		$(".expSectionText").addClass("fadeInEffect9")
 	}
 	else {
 		// The element is not visible, do something else
 		console.log("I don't see skillbar");
-	}
-	});
-
-	$(window).scroll(function() {
-	var top_of_element = $("#sectionTopInfo").offset().top;
-	var bottom_of_element = $("#sectionTopInfo").offset().top + $("#sectionTopInfo").outerHeight();
-	var bottom_of_screen = $(window).scrollTop() + window.innerHeight;
-	var top_of_screen = $(window).scrollTop();
-
-	if((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
-		// The element is visible, do something
-		$(".eduSectionText").addClass("fadeInEffect5");
-		$(".awardSectionText").addClass("fadeInEffect7");
-		$(".expSectionText").addClass("fadeInEffect9");
-	}
-	else {
-		// The element is not visible, do something else
-		console.log("I don't see infobar");
 	}
 	});
 
