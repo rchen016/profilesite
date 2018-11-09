@@ -141,7 +141,7 @@ h1, h2, h3, h4, h5, h6 {
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
-	min-height: 140vh;
+	min-height: 100vh;
 }
 
 .skillmargin{
@@ -413,6 +413,14 @@ button.close-modal {
 	max-width: 100%;
 	padding: 0px !important;
 	width: 100%;
+}
+
+.card{
+	height: 100% !important;
+}
+
+.card-img-top{
+	height: 380px;
 }
 /*Modal CSS End*/
 /*End Font and Styling*/
