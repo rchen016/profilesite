@@ -1,12 +1,17 @@
 #page {
     overflow: hidden;
 }
+
 /* Default & Bootstrap Override */
 .containerOveride{
 	max-width: 100%;
 	padding: 0px;
 }
 
+.row{
+	margin-right: 0 !important;
+	margin-left: 0 !important;
+}
 .col-12{
 	padding-left: 0px;
 	padding-right: 0px;
@@ -43,8 +48,13 @@
 }
 body {
   font-family: 'Open Sans', sans-serif;
+  position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+
+
 }
-h1, h2, h3, h4, h5, h6 {
+, h3, h4, h5, h6 {
   font-family: 'Rubik', sans-serif;
 }
 
@@ -403,6 +413,12 @@ button.close-modal {
   margin-top: 1vh;
 }
 
+.trioIcon{
+	 display:flex !important;
+	 justify-content:center !important;
+	 align-items:center !important;
+}
+
 #sectionSkillBar{
 	position: relative;
 }
@@ -447,45 +463,8 @@ button.close-modal {
 	  	 justify-content:center !important;
 	  	 align-items:center !important;
 	    }
-	    .parallaxCover {
-	        /* The image used */
-	    	background-image: url("https://i.imgur.com/Sfv021j.jpg");
-			image-rendering: -webkit-optimize-contrast;
-	        /* Set a specific height */
-	        /* Create the parallax scrolling effect */
-			display: none !important;
-	    	min-height: 110vh;
-	    }
-	    .parallaxSkill {
-	  	/* The image used */
-		display: none !important;
-		background-image: url("https://i.imgur.com/rlWkyXq.jpg");
-		image-rendering: -webkit-optimize-contrast;
-	  	/* Set a specific height */
-	  	/* Create the parallax scrolling effect */
-
-	  	min-height: 105vh;
-	    }
-		.mobileParallax {
-	        /* The image used */
-	    	background-image: url("https://i.imgur.com/Sfv021j.jpg");
-			image-rendering: -webkit-optimize-contrast;
-	        /* Set a specific height */
-	        /* Create the parallax scrolling effect */
-			display: block !important;
-			background-repeat: no-repeat;
-	    	min-height: 110vh;
-	    }
-		.parallaxSkillMobile{
-			/* The image used */
-		  background-image: url("https://i.imgur.com/rlWkyXq.jpg");
-		  image-rendering: -webkit-optimize-contrast;
-		  /* Set a specific height */
-		  /* Create the parallax scrolling effect */
-		  display: block !important;
-		  background-repeat: no-repeat;
-		  min-height: 110vh;
-
+		#foot{
+			height: 17vh !important;
 		}
 	}
 
