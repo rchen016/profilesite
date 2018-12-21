@@ -151,7 +151,7 @@ body {
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
-	min-height: 100vh;
+	min-height: 97vh;
 }
 
 .skillmargin{
@@ -167,12 +167,12 @@ body {
 }
 
 /*projectBoxesRowCOL*/
-.cardProjectImage11{
+.cardProjectImage{
 	opacity: .65;
 }
 
 /*Hover CSS*/
-.cardProjectImage11:hover{
+.cardProjectImage:hover{
 	opacity: 1.1;
 }
 
@@ -444,7 +444,7 @@ button.close-modal {
 	display: none !important;
 }
 /*responsive media*/
-@media screen
+@media screen /*Iphone XS MAx */
     and (max-width : 414px) {
 		.projectModalHeaders{
 	  	  font-size: 3vh;
@@ -466,8 +466,16 @@ button.close-modal {
 		#foot{
 			height: 17vh !important;
 		}
+		.cardProjectImage{
+			opacity: 1;
+		}
 	}
-
+	@media screen /*Iphone 6*/
+	    and (max-width : 768px) {
+			[class*="col-"] {
+				width: 100% !important;
+			}
+		}
 }
 
 /*responsive media end*/
