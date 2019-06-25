@@ -469,6 +469,71 @@ button.close-modal {
 		.cardProjectImage{
 			opacity: 1;
 		}
+		.parallaxCover {
+		    /* Reset All for mobile */
+			background-image: none;
+			background-size: auto auto;
+			background-position: 0 0;
+			background-attachment: scroll;
+			min-height: 0;
+		}
+
+		.parallaxSkill {
+		    /* The image used */
+		    background-image: url("https://i.imgur.com/n4crIGm.jpg");
+		    /* Set a specific height */
+		    /* Create the parallax scrolling effect */
+			#background-color: #f2f2f2;
+			background-size: cover;
+			background-position: center;
+			background-attachment: scroll;
+			min-height: 105vh;
+		}
+
+		.parallaxCover:after {
+			content:"";
+			position:fixed; /* stretch a fixed position to the whole screen */
+			top:0;
+			height:100vh; /* fix for mobile browser address bar appearing disappearing */
+			max-height: 100vh;
+			left:0;
+			right:0;
+			z-index:-1; /* needed to keep in the background */
+			background: url("https://i.imgur.com/21kD2g8.jpg") center center;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+
+
+		.desktopParallax{
+			margin-bottom: 350px;
+		}
+		.topCoverText{
+			margin-top: 170px;
+		}
+		html{
+			overflow-x:hidden;
+		}
+		body {
+			overflow: hidden;
+			width: 100%;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			position: relative;
+		}
+		.skillmargin{
+			width: 80%;
+			display: inline-block;
+		}
+		.display-3{
+			font-size: 50px;
+		}
+		.skillcontainer{
+			text-align: center;
+		}
 	}
 	@media screen /*Iphone 6*/
 	    and (max-width : 768px) {
