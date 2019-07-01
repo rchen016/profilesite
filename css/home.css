@@ -452,7 +452,7 @@ button.close-modal {
 	  	 align-items:center !important;
 	    }
 		#foot{
-			height: 17vh !important;
+			height: 17vh;
 		}
 		.cardProjectImage{
 			opacity: 1;
@@ -521,6 +521,12 @@ button.close-modal {
 		}
 		.skillcontainer{
 			text-align: center;
+		}
+		.footDesc{
+			margin-top: 20px;
+		}
+		.botFooter{
+			height: 20vh !important;
 		}
 	}
 	@media screen /*Iphone 6*/
