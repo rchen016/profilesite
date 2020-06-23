@@ -17,28 +17,28 @@ $(window).scroll(function(){
                 var setBar1 = setInterval(function(){
                     document.getElementById("pb1").style.width = Number(document.getElementById("pb1").style.width.split("%")[0])+1+"%";
                     if(document.getElementById("pb1").style.width.split("%")[0]>=42){
-                        document.getElementById("pb1").innerHTML = "42%";
                         clearInterval(setBar1);
+                        document.getElementById("pro1").style.visibility = "visible";
                         var setBar2 = setInterval(function(){
                             document.getElementById("pb2").style.width = Number(document.getElementById("pb2").style.width.split("%")[0])+1+"%";
                             if(document.getElementById("pb2").style.width.split("%")[0]>=50){
-                                document.getElementById("pb2").innerHTML = "50%";
                                 clearInterval(setBar2);
+                                document.getElementById("pro2").style.visibility = "visible";
                                 var setBar3 = setInterval(function(){
                                     document.getElementById("pb3").style.width = Number(document.getElementById("pb3").style.width.split("%")[0])+1+"%";
                                     if(document.getElementById("pb3").style.width.split("%")[0]>=83){
-                                         document.getElementById("pb3").innerHTML = "83%";
                                         clearInterval(setBar3);
+                                        document.getElementById("pro3").style.visibility = "visible";
                                         var setBar4 = setInterval(function(){
                                             document.getElementById("pb4").style.width = Number(document.getElementById("pb4").style.width.split("%")[0])+1+"%";
                                             if(document.getElementById("pb4").style.width.split("%")[0]>=68){
-                                                 document.getElementById("pb4").innerHTML = "68%";
                                                 clearInterval(setBar4);
+                                                document.getElementById("pro4").style.visibility = "visible";
                                                 var setBar5 = setInterval(function(){
                                                     document.getElementById("pb5").style.width = Number(document.getElementById("pb5").style.width.split("%")[0])+1+"%";
                                                     if(document.getElementById("pb5").style.width.split("%")[0]>=40){
-                                                         document.getElementById("pb5").innerHTML = "40%";
                                                         clearInterval(setBar5);
+                                                        document.getElementById("pro5").style.visibility = "visible";
                                                         $(window).off('scroll.custom',scroll);
                                                     }
                                                 },10);

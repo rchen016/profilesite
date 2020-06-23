@@ -3,6 +3,9 @@
 }
 
 /* Default & Bootstrap Override */
+.progress{
+    font-size: .8rem;
+}
 .navbar-nav .nav-link{
     color: #FFF;
 }
@@ -162,8 +165,8 @@ body {
     /* The image used */
     /* background-image: url("https://i.imgur.com/XYEsBvp.jpg"); */
 
-    background-image: url("https://images.unsplash.com/photo-1517021897933-0e0319cfbc28?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=719&q=80");
-
+    /* background-image: url("https://images.unsplash.com/photo-1517021897933-0e0319cfbc28?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=719&q=80"); */
+    background-image: url("https://i.imgur.com/jN0MjB7.jpg");
     /* Set a specific height */
     /* Create the parallax scrolling effect */
 	#background-color: #f2f2f2;
@@ -278,8 +281,22 @@ body {
 
 }
 
-.introText{
+#pro1, #pro2, #pro3, #pro4, #pro5{
+    visibility: hidden;
+}
+
+.shadowText{
     text-shadow: #000 0px 0px 10px;
+}
+
+.shadowTextSM{
+    text-shadow: #000 0px 0px 5px;
+}
+
+.progressPercent{
+    margin-left: 10px;
+    color: #16bbb4;
+    font-family: 'Neuton', serif;
 }
 
 .projectBoxes34{

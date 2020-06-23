@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="./css/home.css" />
 		<link href="https://fonts.googleapis.com/css?family=Rokkitt|Anton|Open+Sans|Rubik|Cinzel|Sigmar+One" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css2?family=Neuton:wght@800&display=swap" rel="stylesheet">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js" crossorigin="anonymous"></script>
 		<script src="./js/fadeSection.js"></script>
 		<script src="./js/progressBar.js"></script>
@@ -51,12 +52,12 @@
 			<div class="desktopParallax containerOveride">
 				<section class="parallaxCover text-white d-flex justify-content-center align-items-center">
 					<div class="container text-bottom topCoverText">
-					  <h1 class="display-1 text-uppercase introText">
-						  I<span id="colorIt">'</span>m <br>
+					  <h1 class="display-1 text-uppercase">
+						  <span class="shadowText">I<span id="colorIt">'</span>m <br>
 						  Ricky<br>
-						  Chen<span id="colorIt">.</span>
+						  Chen<span id="colorIt">.</span></span>
 					  </h1>
-					  <p class="text-white d-none d-sm-block fadeInEffect7 paraText subHeader">BS in Computer Science</p>
+					  <p class="text-white d-none d-sm-block fadeInEffect7 paraText subHeader shadowText">BS in Computer Science</p>
 					</div>
 				</section>
 			</div>
@@ -64,32 +65,31 @@
 				<div class="row">
 					<div id="skilBar"  class="col-12">
 						<div class="container text-center text-bottom">
-					      <h1 class="display-3 text-uppercase profParaText">Professional<span id="colorIt">:</span></h1>
-					      <p class="display-5 d-none d-sm-block profParaText">My Skill Level Breakdown</p>
+					      <h1 class="display-3 text-uppercase profParaText shadowText">Professional<span id="colorIt">:</span></h1>
+					      <p class="display-5 d-none d-sm-block profParaText shadowText">My Skill Level Breakdown</p>
 					    </div>
 					</div>
 					<div id="percentBars" class="col-12">
 						<div id="skillcontainer">
-							<b>C++</b>
+							<span class="shadowTextSM"><b>C++</b></span>
 							<div class="progress skillmargin">
-
-								<div class="progress-bar bg-secondary" id="pb1" role="progressbar"aria-valuenow="42" aria-valuemin="0" aria-valuemax="100"></div> <span class="text-secondary"></span>
+								<div class="progress-bar bg-secondary" id="pb1" role="progressbar"aria-valuenow="42" aria-valuemin="0" aria-valuemax="100"></div> <span class="progressPercent" id="pro1">42%</span>
 							</div>
-							<b>Python</b>
+							<span class="shadowTextSM"><b>Python</b></span>
 							<div class="progress skillmargin">
-								<div class="progress-bar bg-secondary" id="pb2" role="progressbar"aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div> <span class="text-secondary"></span>
+								<div class="progress-bar bg-secondary" id="pb2" role="progressbar"aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div> <span class="progressPercent" id="pro2">50%</span>
 							</div>
-							<b>HTML/CSS/JS</b>
+							<span class="shadowTextSM"><b>HTML/CSS/JS</b></span>
 							<div class="progress skillmargin">
-								<div class="progress-bar bg-secondary" id="pb3" role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"></div> <span class="text-secondary"></span>
+								<div class="progress-bar bg-secondary" id="pb3" role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"></div> <span class="progressPercent" id="pro3">83%</span>
 							</div>
-							<b>Excel VBA</b>
+							<span class="shadowTextSM"><b>Excel VBA</b></span>
 							<div class="progress skillmargin">
-								<div class="progress-bar bg-secondary" id="pb4" role="progressbar" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100"></div> <span class="text-secondary"></span>
+								<div class="progress-bar bg-secondary" id="pb4" role="progressbar" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100"></div> <span class="progressPercent" id="pro4">68%</span>
 							</div>
-							<b>Excel</b>
+							<span class="shadowTextSM"><b>Excel</b></span>
 							<div class="progress skillmargin">
-								<div class="progress-bar bg-secondary" id="pb5" role="progressbar" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100"></div> <span class="text-secondary"></span>
+								<div class="progress-bar bg-secondary" id="pb5" role="progressbar" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100"></div> <span class="progressPercent" id="pro5">42%</span>
 							</div>
 						</div>
 					</div>
@@ -133,13 +133,13 @@
 								</div>
 							</div>
 						</div>
-						  <h3 class="h4 mb-4 text-center eduSectionText">Education</h3>
+						  <h3 class="h4 mb-4 text-center eduSectionText shadowText">Education</h3>
 					</div>
 					<div id="awardsBlock" class="col-4 col-sm-4 col-lg-4 d-flex flex-column align-items-center mb-5 topper">
 						<a href="#" class="modalBtn" data-modal="awardModalName">
 							<div class="h1"><i class="fa fa-award profIcons mb-4" aria-hidden="true"></i></div>
 						</a>
-						<h3 class="h4 mb-4 text-center text-light awardSectionText">Awards</h3>
+						<h3 class="h4 mb-4 text-center text-light awardSectionText shadowText">Awards</h3>
 						<div class="modal" id="awardModalName">
 							<div class="modal-sandbox"></div>
 							<div class="modal-box">
@@ -160,7 +160,7 @@
 							<div class="h1"><i class="fa fa-briefcase profIcons mb-4" aria-hidden="true"></i></div>
 						</a>
 
-						<h3 class="h4 mb-4 text-center expSectionText">Experience</h3>
+						<h3 class="h4 mb-4 text-center expSectionText shadowText">Experience</h3>
 						<div class="modal" id="expModalName">
 							<div class="modal-sandbox"></div>
 							<div class="modal-box">
