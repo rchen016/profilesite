@@ -3,6 +3,16 @@
 }
 
 /* Default & Bootstrap Override */
+.navbar-nav .nav-link{
+    color: #FFF;
+}
+
+.navbar-brand{
+    color: #16bbb4;
+}
+.navbar{
+    background-color: #000 !important;
+}
 .containerOveride{
 	max-width: 100%;
 	padding: 0px;
@@ -118,10 +128,28 @@ body {
     to   { opacity: 1; }
 }
 /* End Effecs */
+.parallaxBottom{
+
+    background-image: url("https://images.unsplash.com/photo-1514238434711-667893ab79b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80");
+    background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	min-height: 100vh;
+}
+
+.profIcons{
+    color: #16bbb4;
+}
+
+#bottomBox{
+    margin-left: 100px;
+    margin-bottom: 100px;
+    margin-right: 100px;
+}
 
 .parallaxCover {
     /* The image used */
-	background-image: url("https://i.imgur.com/21kD2g8.jpg");
+	background-image: url("https://i.imgur.com/hJDI7if.jpg");
     /* Set a specific height */
     /* Create the parallax scrolling effect */
 	background-size: cover;
@@ -132,7 +160,10 @@ body {
 
 .parallaxSkill {
     /* The image used */
-    background-image: url("https://i.imgur.com/XYEsBvp.jpg");
+    /* background-image: url("https://i.imgur.com/XYEsBvp.jpg"); */
+
+    background-image: url("https://images.unsplash.com/photo-1517021897933-0e0319cfbc28?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=719&q=80");
+
     /* Set a specific height */
     /* Create the parallax scrolling effect */
 	#background-color: #f2f2f2;
@@ -140,6 +171,10 @@ body {
 	background-position: center;
 	background-attachment: fixed;
 	min-height: 105vh;
+}
+
+.parallaxSkill::before{
+     filter: grayscale(100%);
 }
 
 .skillmargin{
@@ -243,6 +278,10 @@ body {
 
 }
 
+.introText{
+    text-shadow: #000 0px 0px 10px;
+}
+
 .projectBoxes34{
 	background-color: #f2f2f2;
 
@@ -269,6 +308,18 @@ body {
 	color: #4c4c4c;
 }
 
+.projParaText{
+	font-family: 'Anton', sans-serif;
+    margin-left: 42%;
+    margin-bottom: 10px;
+	color: #FFF;
+}
+
+.profParaText{
+    font-family: 'Anton', sans-serif;
+    color: #FFF;
+}
+
 .paraTextGH{
 	font-family: 'Anton', sans-serif;
 	color: #637ee8;
@@ -278,11 +329,11 @@ body {
 	font-family: 'Cinzel', serif;
 }
 .footStyle{
-	height: 12.7vh;
+	height: 5vh;
 }
 
 .contactIcon{
-	font-size: 5vh;
+	font-size: 2vh;
 	padding-left: 1vh;
 	padding-right: 1vh;
 }
@@ -373,6 +424,16 @@ body {
 }
 
 /* Aditional Styles */
+.list-inline{
+    margin: 0;
+    font-size: 11px;
+}
+#colorIt{
+    color: #16bbb4;
+}
+.subHeader{
+    font-size: 28px;
+}
 .modal-trigger, button {
   top: 50%;
   left: 50%;
@@ -424,7 +485,7 @@ button.close-modal {
 }
 
 .card-img-top{
-	height: 380px;
+	height: 280px;
 }
 /*Modal CSS End*/
 /*End Font and Styling*/
@@ -519,7 +580,7 @@ button.close-modal {
 		.display-3{
 			font-size: 50px;
 		}
-		.skillcontainer{
+		#skillcontainer{
 			text-align: center;
 		}
 		.footDesc{

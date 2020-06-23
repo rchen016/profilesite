@@ -12,49 +12,51 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js" crossorigin="anonymous"></script>
 		<script src="./js/fadeSection.js"></script>
+		<script src="./js/progressBar.js"></script>
 		<meta content="width=device-width, initial-scale=1" name="viewport" />
 		<title>Ricky Chen</title>
 	</head>
 	<body>
 		<div class="container containerOveride">
-			<nav class="navbar bg-secondary navbar-dark navbar-expand-md fixed-top menubar"><!-- Nav Bar Start -->
-			<a class="navbar-brand" href="#">Ricky Chen</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item">
-						<a class="nav-link" href="#sectionSkillBar">Skills</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#trio">Info</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#projectNavSpot">Projects</a>
-					</li>
-					<div class="dropdown-divider"></div>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Misc
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" target="_blank" href="https://drive.google.com/file/d/1GGfuj16v2flXM-dyGB7tJUrKX_-AIy9z/view?usp=sharing">Download Resume</a>
-						</div>
-					</li>
-			    </div>
-				</ul>
+			<nav class="navbar navbar-expand-md fixed-top menubar"><!-- Nav Bar Start -->
+				<a class="navbar-brand" href="#">Ricky Chen</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#sectionSkillBar">Skills</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#trio">Info</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#projectNavSpot">Projects</a>
+						</li>
+						<div class="dropdown-divider"></div>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Misc
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" target="_blank" href="https://drive.google.com/file/d/1GGfuj16v2flXM-dyGB7tJUrKX_-AIy9z/view?usp=sharing">Download Resume</a>
+							</div>
+						</li>
+				    </div>
+					</ul>
 				</nav><!-- Nav Bar End -->
 			</div>
 
 			<div class="desktopParallax containerOveride">
 				<section class="parallaxCover text-white d-flex justify-content-center align-items-center">
-					<div class="container text-center text-bottom topCoverText">
-					  <h1 class="display-1 text-secondary text-uppercase paraText">Ricky Chen</h1>
-					  <p class="display-4 text-white d-none d-sm-block fadeInEffect7 paraText">BS in Computer Science</p>
-					  <p class="lead text-white fadeInEffect7 paraText">San Francisco, California</p>
-					  <p class="lead text-white fadeInEffect7 paraText">Email: rickychen10@gmail.com</p>
-					  <p class="lead text-white fadeInEffect7 paraText">(415) 608-4948</p>
+					<div class="container text-bottom topCoverText">
+					  <h1 class="display-1 text-uppercase introText">
+						  I<span id="colorIt">'</span>m <br>
+						  Ricky<br>
+						  Chen<span id="colorIt">.</span>
+					  </h1>
+					  <p class="text-white d-none d-sm-block fadeInEffect7 paraText subHeader">BS in Computer Science</p>
 					</div>
 				</section>
 			</div>
@@ -62,26 +64,32 @@
 				<div class="row">
 					<div id="skilBar"  class="col-12">
 						<div class="container text-center text-bottom">
-					      <h1 class="display-3 text-secondary text-uppercase paraText">Professional:</h1>
-					      <p class="display-5 text-secondary d-none d-sm-block paraText">My Skill Level Breakdown</p>
+					      <h1 class="display-3 text-uppercase profParaText">Professional<span id="colorIt">:</span></h1>
+					      <p class="display-5 d-none d-sm-block profParaText">My Skill Level Breakdown</p>
 					    </div>
 					</div>
 					<div id="percentBars" class="col-12">
-						<div class="skillcontainer">
+						<div id="skillcontainer">
+							<b>C++</b>
 							<div class="progress skillmargin">
-								<div class="progress-bar bg-secondary" role="progressbar" style="width: 42%;" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100"><b>C++</b></div> <span class="text-secondary">42%</span>
+
+								<div class="progress-bar bg-secondary" id="pb1" role="progressbar"aria-valuenow="42" aria-valuemin="0" aria-valuemax="100"></div> <span class="text-secondary"></span>
 							</div>
+							<b>Python</b>
 							<div class="progress skillmargin">
-								<div class="progress-bar bg-secondary" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><b>Python</b></div> <span class="text-secondary">50%</span>
+								<div class="progress-bar bg-secondary" id="pb2" role="progressbar"aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div> <span class="text-secondary"></span>
 							</div>
+							<b>HTML/CSS/JS</b>
 							<div class="progress skillmargin">
-								<div class="progress-bar bg-secondary" role="progressbar" style="width: 83%;" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"><b>HTML/CSS/JS</b></div> <span class="text-secondary">83%</span>
+								<div class="progress-bar bg-secondary" id="pb3" role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"></div> <span class="text-secondary"></span>
 							</div>
+							<b>Excel VBA</b>
 							<div class="progress skillmargin">
-								<div class="progress-bar bg-secondary" role="progressbar" style="width: 68%;" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100"><b>Excel VBA</b></div> <span class="text-secondary">68%</span>
+								<div class="progress-bar bg-secondary" id="pb4" role="progressbar" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100"></div> <span class="text-secondary"></span>
 							</div>
+							<b>Excel</b>
 							<div class="progress skillmargin">
-								<div class="progress-bar bg-secondary" role="progressbar" style="width: 42%;" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100"><b>Excel</b></div> <span class="text-secondary">42%</span>
+								<div class="progress-bar bg-secondary" id="pb5" role="progressbar" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100"></div> <span class="text-secondary"></span>
 							</div>
 						</div>
 					</div>
@@ -90,7 +98,7 @@
 					<div id="educationBlock" class="col-4 col-sm-4 col-lg-4 d-flex flex-column align-items-center mb-5 topper">
 						<a href="#" class="modalBtn" data-modal="eduModalName">
 							<div class="h1">
-								<i class="fa fa-graduation-cap text-light mb-4 eduModalBtn" aria-hidden="true"></i>
+								<i class="fa fa-graduation-cap profIcons mb-4 eduModalBtn" aria-hidden="true"></i>
 							</div>
 						</a>
 						<div class="modal" id="eduModalName">
@@ -129,7 +137,7 @@
 					</div>
 					<div id="awardsBlock" class="col-4 col-sm-4 col-lg-4 d-flex flex-column align-items-center mb-5 topper">
 						<a href="#" class="modalBtn" data-modal="awardModalName">
-							<div class="h1"><i class="fa fa-award text-light mb-4" aria-hidden="true"></i></div>
+							<div class="h1"><i class="fa fa-award profIcons mb-4" aria-hidden="true"></i></div>
 						</a>
 						<h3 class="h4 mb-4 text-center text-light awardSectionText">Awards</h3>
 						<div class="modal" id="awardModalName">
@@ -149,7 +157,7 @@
 					</div>
 					<div id="experienceBlock" class="col-4 col-sm-4 col-lg-4 d-flex flex-column align-items-center mb-5 topper">
 						<a href="#" class="modalBtn" data-modal="expModalName">
-							<div class="h1"><i class="fa fa-briefcase text-light mb-4" aria-hidden="true"></i></div>
+							<div class="h1"><i class="fa fa-briefcase profIcons mb-4" aria-hidden="true"></i></div>
 						</a>
 
 						<h3 class="h4 mb-4 text-center expSectionText">Experience</h3>
@@ -184,8 +192,10 @@
 										</li>
 										<li class="list-group-item"><i aria-hidden="true"></i>
 											<h3 class="text-secondary">Jumpstart - Subsidiary of Hearst Magazines</h3>
+											<h5 class="text-secondary">Technical Coodinator</h5>
 											<h5 class="text-secondary">Technical Specialist</h5>
-											<h6 class="dateRange text-secondary">Jun. 2015 - Present</h6>
+											<h5 class="text-secondary">Manager - Technical Ad Operations</h5>
+											<h6 class="dateRange text-secondary">Jun. 2015 - Oct 2019</h6>
 											<p>
 												<ul class="list-group">
 													<li class="list-group-item paraText">
@@ -196,6 +206,21 @@
 													</li>
 													<li class="list-group-item paraText">
 														Proposed a project that will help automate the manual portion of my role which lead to the creation of Autopilot. This help dramatically cut down work time and human errors on the QA process.
+													</li>
+												</ul>
+											</p>
+										</li>
+										<li class="list-group-item"><i aria-hidden="true"></i>
+											<h3 class="text-secondary">Flashtalking</h3>
+											<h5 class="text-secondary">Technical Specialist</h5>
+											<h6 class="dateRange text-secondary">Oct. 2019 - Present</h6>
+											<p>
+												<ul class="list-group">
+													<li class="list-group-item paraText">
+														Handle day to day tickets on Zendesk. The task include but not limited to issues with the JS template, creating/modifying PIE/Event Tags and discrepency issues.
+													</li>
+													<li class="list-group-item paraText">
+														Maintain Zendesk Helpcenter theming layout
 													</li>
 												</ul>
 											</p>
@@ -211,263 +236,95 @@
 			</section> <!-- Skill Parallax Desktop End -->
 
 			<section class="parallaxBottom" id="sectionTopInfo">
-
-				<span id="projectNavSpot"></span>
-				<div id="projectBoxes1" class="row">
-					<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
-						<a href="#" class="modalBtn" data-modal="project11Name">
-							<div class="card">
-								<img class="card-img-top cardProjectImage" src="https://i.imgur.com/TbSBWFc.jpg" alt="Card image cap">
-								<div class="card-body">
-									<h5 class="card-title text-center display-5 paraText">AutoPilot - JS</h5>
+				<div id="bottomBox">
+					<span class="display-3 projParaText"></span>
+					<span id="projectNavSpot"></span>
+					<div id="projectBoxes1" class="row">
+						<div class="col-4 col-sm-6 col-md-6 col-lg-6 col-xl-3">
+							<a href="#" class="modalBtn" data-modal="project11Name">
+								<div class="card">
+									<img class="card-img-top cardProjectImage" src="https://i.imgur.com/TbSBWFc.jpg" alt="Card image cap">
+									<div class="card-body">
+										<h5 class="card-title text-center display-5 paraText">AutoPilot - <span id="colorIt">JS</span></h5>
+									</div>
 								</div>
-							</div>
-						</a>
-						<div class="modal" id="project11Name">
-							<div class="modal-sandbox"></div>
-							<div class="modal-box">
-								<div class="modal-header">
-									<h1 class="projectModalHeaders">Auto Pilot</h1>
-								</div>
-								<div class="modal-body">
-									<div id="carouselAutoPilotIndicators" class="carousel slide">
-										<ol class="carousel-indicators">
-											<li data-target="#carouselAutoPilotIndicators" data-slide-to="0" class="active"></li>
-											<li data-target="#carouselAutoPilotIndicators" data-slide-to="1"></li>
-											<li data-target="#carouselAutoPilotIndicators" data-slide-to="2"></li>
-										</ol>
-										<div class="carousel-inner">
-											<div class="carousel-item active">
-												<p class="paraText">
-													In this two part script, the first script takes in a text file with URLs you want to be scraped.
-												</p>
-												<img class="d-block" src="https://media.giphy.com/media/PMl0k6dA7eC06EQRqU/giphy.gif" alt="First slide">
+							</a>
+							<div class="modal" id="project11Name">
+								<div class="modal-sandbox"></div>
+								<div class="modal-box">
+									<div class="modal-header">
+										<h1 class="projectModalHeaders">Auto Pilot</h1>
+									</div>
+									<div class="modal-body">
+										<div id="carouselAutoPilotIndicators" class="carousel slide">
+											<ol class="carousel-indicators">
+												<li data-target="#carouselAutoPilotIndicators" data-slide-to="0" class="active"></li>
+												<li data-target="#carouselAutoPilotIndicators" data-slide-to="1"></li>
+												<li data-target="#carouselAutoPilotIndicators" data-slide-to="2"></li>
+											</ol>
+											<div class="carousel-inner">
+												<div class="carousel-item active">
+													<p class="paraText">
+														In this two part script, the first script takes in a text file with URLs you want to be scraped.
+													</p>
+													<img class="d-block" src="https://media.giphy.com/media/PMl0k6dA7eC06EQRqU/giphy.gif" alt="First slide">
+												</div>
+												<div class="carousel-item">
+													<p class="paraText">
+														With the results from script one, it decodes the string and parses it into a CSV
+													</p>
+													<img class="d-block" src="https://media.giphy.com/media/Zvn2ZRUrG714RmPv8u/giphy.gif" alt="Second slide">
+												</div>
+												<div class="carousel-item">
+													<p class="paraText">
+														The final product shows all the desired values and last columns compares results to a mapping.
+													</p>
+													<img class="d-block" src="https://media.giphy.com/media/3eP5pCglzacolFG1RA/giphy.gif" alt="Third slide">
+												</div>
 											</div>
-											<div class="carousel-item">
-												<p class="paraText">
-													With the results from script one, it decodes the string and parses it into a CSV
-												</p>
-												<img class="d-block" src="https://media.giphy.com/media/Zvn2ZRUrG714RmPv8u/giphy.gif" alt="Second slide">
-											</div>
-											<div class="carousel-item">
-												<p class="paraText">
-													The final product shows all the desired values and last columns compares results to a mapping.
-												</p>
-												<img class="d-block" src="https://media.giphy.com/media/3eP5pCglzacolFG1RA/giphy.gif" alt="Third slide">
-											</div>
-										</div>
-										<a class="carousel-control-prev" href="#carouselAutoPilotIndicators" role="button" data-slide="prev">
-											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-											<span class="sr-only">Previous</span>
-										</a>
-										<a class="carousel-control-next" href="#carouselAutoPilotIndicators" role="button" data-slide="next">
-											<span class="carousel-control-next-icon" aria-hidden="true"></span>
-											<span class="sr-only">Next</span>
-										</a><br />
-										<h2>Tech Stack</h2>
-										<ul class="list-group">
-											<li class="list-group-item paraText">
-												Javascript
-											</li>
-											<li class="list-group-item paraText">
-												CasperJS
-											</li>
-										</ul>
-									</div><br />
-									<a class="paraTextGH" target="_blank" href="https://github.com/rchen016/QA-Tool">Github Link</a><br />
-									<button class="close-modal">Close!</button>
+											<a class="carousel-control-prev" href="#carouselAutoPilotIndicators" role="button" data-slide="prev">
+												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+												<span class="sr-only">Previous</span>
+											</a>
+											<a class="carousel-control-next" href="#carouselAutoPilotIndicators" role="button" data-slide="next">
+												<span class="carousel-control-next-icon" aria-hidden="true"></span>
+												<span class="sr-only">Next</span>
+											</a><br />
+											<h2>Tech Stack</h2>
+											<ul class="list-group">
+												<li class="list-group-item paraText">
+													Javascript
+												</li>
+												<li class="list-group-item paraText">
+													CasperJS
+												</li>
+											</ul>
+										</div><br />
+										<a class="paraTextGH" target="_blank" href="https://github.com/rchen016/QA-Tool">Github Link</a><br />
+										<button class="close-modal">Close!</button>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
-						<a href="#" class="modalBtn" data-modal="project12Name">
-							<div class="card">
-								<img class="card-img-top cardProjectImage" src="https://i.imgur.com/5VNuEgk.jpg" alt="Card image cap">
-								<div class="card-body">
-									<h5 class="card-title text-center display-5 paraText">Pubdemo Clone- MEN</h5>
+						<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
+							<a href="#" class="modalBtn" data-modal="project12Name">
+								<div class="card">
+									<img class="card-img-top cardProjectImage" src="https://i.imgur.com/5VNuEgk.jpg" alt="Card image cap">
+									<div class="card-body">
+										<h5 class="card-title text-center display-5 paraText">Pubdemo Clone- <span id="colorIt">MEN</span></h5>
+									</div>
 								</div>
-							</div>
-						</a>
-						<div class="modal" id="project12Name">
-							<div class="modal-sandbox"></div>
-							<div class="modal-box">
-								<div class="modal-header">
-									<h1 class="projectModalHeaders">Pubdemo Clone</h1>
-								</div>
-								<div class="modal-body">
-									<p class="paraText">
-										This is a remake of an existing project with ExpressJS for educational purposes. The site's main objective is to help new publishers onboard with our ad flow and layout. It allows for new publishers to traverse through possible layouts per site section. <br />
-									</p>
-									<h2>Tech Stack</h2>
-									<ul class="list-group">
-										<li class="list-group-item paraText">
-											ExpressJS
-										</li>
-										<li class="list-group-item paraText">
-											NodeJS
-										</li>
-										<li class="list-group-item paraText">
-											JQuery
-										</li>
-										<li class="list-group-item paraText">
-											MongoDB (mLabs)
-										</li>
-										<li class="list-group-item paraText">
-											Heroku
-										</li>
-									</ul><br />
-									<a class="paraTextGH" target="_blank" href="http://pubdemo.herokuapp.com/">Site (Slow initial load because free Heroku)</a><br />
-									<a class="paraTextGH" target="_blank" href="https://github.com/rchen016/pubdemo">Github Link</a> <br />
-									<button class="close-modal">Close!</button>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
-						<a href="#" class="modalBtn" data-modal="project13Name">
-							<div class="card">
-								<img class="card-img-top cardProjectImage" src="https://i.imgur.com/7RleFrt.png" alt="Card image cap">
-								<div class="card-body">
-									<h5 class="card-title text-center display-5 paraText">In progress - MERN</h5>
-								</div>
-							</div>
-						</a>
-						<div class="modal" id="project13Name">
-							<div class="modal-sandbox"></div>
-							<div class="modal-box">
-								<div class="modal-header">
-									<h1 class="projectModalHeaders">Crowd Score</h1>
-								</div>
-								<div class="modal-body">
-									<p>
-										A Movie & TV Series search engine that uses multiple APIs to pull in ratings + misc info.<br />
-									</p><br />
-									<h2>Tech Stack</h2>
-									<ul class="list-group">
-										<li class="list-group-item paraText">
-											MongoDB
-										</li>
-										<li class="list-group-item paraText">
-											ExpressJS
-										</li>
-										<li class="list-group-item paraText">
-											React
-										</li>
-										<li class="list-group-item paraText">
-											NodeJS
-										</li>
-									</ul><br />
-									<a class="paraTextGH" target="_blank" href="https://crowdscore.herokuapp.com/">Site (Slow initial load because free Heroku)</a><br />
-									<a class="paraTextGH" target="_blank" href="https://github.com/rchen016/crowdscore">Github Link</a><br />
-									<button class="close-modal">Close!</button>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
-						<a href="#" class="modalBtn" data-modal="project14Name">
-							<div class="card">
-								<img class="card-img-top cardProjectImage" src="https://i.imgur.com/zn9s9s7.jpg" alt="Card image cap">
-								<div class="card-body">
-									<h5 class="card-title text-center display-5 paraText">Audit Macros - VBA</h5>
-								</div>
-							</div>
-						</a>
-						<div class="modal" id="project14Name">
-							<div class="modal-sandbox"></div>
-							<div class="modal-box">
-								<div class="modal-header">
-									<h1 class="projectModalHeaders">Audit Macros</h1>
-								</div>
-								<div class="modal-body">
-									<p>
-										This macro generates a monthly audit.
-										It dynamically scans for correct User path and amount of zip files to process.<br />
-									</p>
-									<ol class="list-group">
-										<li class="list-group-item paraText">
-											Unzips all the raw data files from Box.
-										</li>
-										<li class="list-group-item paraText">
-											Copys and paste all the necessary columns from the raw data into an audit reporting Excel template.
-										</li>
-										<li class="list-group-item paraText">
-											Goes to the formulas tab in the audit reporting Excel template and runs all the needed comparisons.
-										</li>
-										<li class="list-group-item paraText">
-											Remove all raw data tabs so that the final report only has the needed information.
-										</li>
-									</ol><br />
-									<h2>Tech Stack</h2>
-									<ul class="list-group">
-										<li class="list-group-item paraText">
-											Excel VBA
-										</li>
-										<li class="list-group-item paraText">
-											Box
-										</li>
-									</ul><br />
-									<a class="paraTextGH" target="_blank" href="https://gist.github.com/rchen016/03624205a8cc1d3026745909ffb24ee0">Github Link</a><br />
-									<button class="close-modal">Close!</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div id="projectBoxes2" class="row">
-					<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
-						<a href="#" class="modalBtn" data-modal="project21Name">
-							<div class="card" style="width>:100%;">
-								<img class="card-img-top cardProjectImage" src="https://i.imgur.com/pr2j46R.png" alt="Card image cap">
-								<div class="card-body">
-									<h5 class="card-title text-center display-5 paraText">This Webiste - HTML | CSS</h5>
-								</div>
-							</div>
-						</a>
-						<div class="modal" id="project21Name">
-							<div class="modal-sandbox"></div>
-							<div class="modal-box">
-								<div class="modal-header">
-									<h1 class="projectModalHeaders">Profile Site</h1>
-								</div>
-								<div class="modal-body">
-									<p class="paraText">
-										This website was built to be a profile site that displays all my education and projects<br />
-									</p><br />
-									<h2>Tech Stack</h2>
-									<ul class="list-group">
-										<li class="list-group-item paraText">
-											HTML
-										</li>
-										<li class="list-group-item paraText">
-											CSS
-										</li>
-									</ul><br />
-									<a class="paraTextGH" target="_blank" href="https://github.com/rchen016/profilesite">Github Link</a><bR />
-									<button class="close-modal">Close!</button>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
-						<a href="#" class="modalBtn" data-modal="project22Name">
-							<div class="card">
-								<img class="card-img-top cardProjectImage" src="https://i.imgur.com/A65rjCy.png" alt="Card image cap">
-								<div class="card-body">
-									<h5 class="card-title text-center display-5 paraText">myFitnessHomie - MEN</h5>
-								</div>
-							</div>
-						</a>
-						<div class="modal" id="project22Name">
-							<div class="modal-sandbox"></div>
-							<div class="modal-box">
-								<div class="modal-header">
-									<h1 class="projectModalHeaders">myFitnessHomie</h1>
-								</div>
-								<div class="modal-body">
-									<p class="paraText">
-										This website is a play on myFitnessPal. It allows users to browse a workout al carte, build workout list and store progress.<br />
+							</a>
+							<div class="modal" id="project12Name">
+								<div class="modal-sandbox"></div>
+								<div class="modal-box">
+									<div class="modal-header">
+										<h1 class="projectModalHeaders">Pubdemo Clone</h1>
+									</div>
+									<div class="modal-body">
+										<p class="paraText">
+											This is a remake of an existing project with ExpressJS for educational purposes. The site's main objective is to help new publishers onboard with our ad flow and layout. It allows for new publishers to traverse through possible layouts per site section. <br />
+										</p>
 										<h2>Tech Stack</h2>
 										<ul class="list-group">
 											<li class="list-group-item paraText">
@@ -485,96 +342,266 @@
 											<li class="list-group-item paraText">
 												Heroku
 											</li>
-										</ul>
-									</p><br />
-									<a class="paraTextGH" target="_blank" href="https://myfitnesshomie.herokuapp.com/">Site (Slow initial load because free Heroku)</a><br />
-									<a class="paraTextGH" target="_blank" href="https://github.com/rchen016/fitnessApp">Github Link</a> <br />
-									<button class="close-modal">Close!</button>
+										</ul><br />
+										<a class="paraTextGH" target="_blank" href="http://pubdemo.herokuapp.com/">Site (Slow initial load because free Heroku)</a><br />
+										<a class="paraTextGH" target="_blank" href="https://github.com/rchen016/pubdemo">Github Link</a> <br />
+										<button class="close-modal">Close!</button>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
-						<a href="#" class="modalBtn" data-modal="project23Name">
-							<div class="card">
-								<img class="card-img-top cardProjectImage" src="https://i.imgur.com/RT95QLh.jpg" alt="Card image cap">
-								<div class="card-body">
-									<h5 class="card-title text-center display-5 paraText">Carmelo Homage- MEN</h5>
+						<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
+							<a href="#" class="modalBtn" data-modal="project13Name">
+								<div class="card">
+									<img class="card-img-top cardProjectImage" src="https://i.imgur.com/7RleFrt.png" alt="Card image cap">
+									<div class="card-body">
+										<h5 class="card-title text-center display-5 paraText">In progress - <span id="colorIt">MERN</span></h5>
+									</div>
 								</div>
-							</div>
-						</a>
-						<div class="modal" id="project23Name">
-							<div class="modal-sandbox"></div>
-							<div class="modal-box">
-								<div class="modal-header">
-									<h1 class="projectModalHeaders">Carmelo Homage</h1>
-								</div>
-								<div class="modal-body">
-									<p class="paraText">
-										This website was for fun where I am displaying the accolades of my favorite NBA player Carmleo. (Retiring soon) <br />
+							</a>
+							<div class="modal" id="project13Name">
+								<div class="modal-sandbox"></div>
+								<div class="modal-box">
+									<div class="modal-header">
+										<h1 class="projectModalHeaders">Crowd Score</h1>
+									</div>
+									<div class="modal-body">
+										<p>
+											A Movie & TV Series search engine that uses multiple APIs to pull in ratings + misc info.<br />
+										</p><br />
 										<h2>Tech Stack</h2>
 										<ul class="list-group">
+											<li class="list-group-item paraText">
+												MongoDB
+											</li>
 											<li class="list-group-item paraText">
 												ExpressJS
 											</li>
 											<li class="list-group-item paraText">
+												React
+											</li>
+											<li class="list-group-item paraText">
 												NodeJS
 											</li>
+										</ul><br />
+										<a class="paraTextGH" target="_blank" href="https://crowdscore.herokuapp.com/">Site (Slow initial load because free Heroku)</a><br />
+										<a class="paraTextGH" target="_blank" href="https://github.com/rchen016/crowdscore">Github Link</a><br />
+										<button class="close-modal">Close!</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
+							<a href="#" class="modalBtn" data-modal="project14Name">
+								<div class="card">
+									<img class="card-img-top cardProjectImage" src="https://i.imgur.com/zn9s9s7.jpg" alt="Card image cap">
+									<div class="card-body">
+										<h5 class="card-title text-center display-5 paraText">Audit Macros - <span id="colorIt">VBA</span></h5>
+									</div>
+								</div>
+							</a>
+							<div class="modal" id="project14Name">
+								<div class="modal-sandbox"></div>
+								<div class="modal-box">
+									<div class="modal-header">
+										<h1 class="projectModalHeaders">Audit Macros</h1>
+									</div>
+									<div class="modal-body">
+										<p>
+											This macro generates a monthly audit.
+											It dynamically scans for correct User path and amount of zip files to process.<br />
+										</p>
+										<ol class="list-group">
 											<li class="list-group-item paraText">
-												MongoDB (mLabs)
+												Unzips all the raw data files from Box.
 											</li>
 											<li class="list-group-item paraText">
-												Heroku
+												Copys and paste all the necessary columns from the raw data into an audit reporting Excel template.
 											</li>
-										</ul>
-									</p><br />
-									<a class="paraTextGH" target="_blank" href="https://carmeloblog.herokuapp.com/blogs">Site (Slow initial load because free Heroku)</a><br />
-									<a class="paraTextGH" target="_blank" href="https://github.com/rchen016/blogApp">Github Link</a> <br />
-									<button class="close-modal">Close!</button>
+											<li class="list-group-item paraText">
+												Goes to the formulas tab in the audit reporting Excel template and runs all the needed comparisons.
+											</li>
+											<li class="list-group-item paraText">
+												Remove all raw data tabs so that the final report only has the needed information.
+											</li>
+										</ol><br />
+										<h2>Tech Stack</h2>
+										<ul class="list-group">
+											<li class="list-group-item paraText">
+												Excel VBA
+											</li>
+											<li class="list-group-item paraText">
+												Box
+											</li>
+										</ul><br />
+										<a class="paraTextGH" target="_blank" href="https://gist.github.com/rchen016/03624205a8cc1d3026745909ffb24ee0">Github Link</a><br />
+										<button class="close-modal">Close!</button>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
-						<a href="#" class="modalBtn" data-modal="project24Name">
-							<div class="card">
-								<img class="card-img-top cardProjectImage" src="https://images.unsplash.com/photo-1536312975196-2f175c3c0eed?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=943&q=80" alt="Card image cap">
-								<div class="card-body">
-									<h5 class="card-title text-center display-5 paraText">In Progress</h5>
+					<div id="projectBoxes2" class="row">
+						<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
+							<a href="#" class="modalBtn" data-modal="project21Name">
+								<div class="card" style="width>:100%;">
+									<img class="card-img-top cardProjectImage" src="https://i.imgur.com/pr2j46R.png" alt="Card image cap">
+									<div class="card-body">
+										<h5 class="card-title text-center display-5 paraText">This Webiste - <span id="colorIt">HTML | CSS</span></h5>
+									</div>
 								</div>
-							</div>
-						</a>
-						<div class="modal" id="project24Name">
-							<div class="modal-sandbox"></div>
-							<div class="modal-box">
-								<div class="modal-header">
-									<h1 class="projectModalHeaders">Chatter</h1>
-								</div>
-								<div class="modal-body">
-									<p class="paraText">
-										This is a website that I implemented to learn bidirectional and event-based communication. It's a simple texting app with all the essential features of credentials/friendlist/messaging.<br />
+							</a>
+							<div class="modal" id="project21Name">
+								<div class="modal-sandbox"></div>
+								<div class="modal-box">
+									<div class="modal-header">
+										<h1 class="projectModalHeaders">Profile Site</h1>
+									</div>
+									<div class="modal-body">
+										<p class="paraText">
+											This website was built to be a profile site that displays all my education and projects<br />
+										</p><br />
 										<h2>Tech Stack</h2>
 										<ul class="list-group">
 											<li class="list-group-item paraText">
-												ExpressJS
+												HTML
 											</li>
 											<li class="list-group-item paraText">
-												NodeJS
+												CSS
 											</li>
-											<li class="list-group-item paraText">
-												Socketio
-											</li>
-											<li class="list-group-item paraText">
-												MongoDB (mLabs)
-											</li>
-											<li class="list-group-item paraText">
-												Heroku
-											</li>
-										</ul>
-									</p><br />
-									<a class="paraTextGH" target="_blank" href="https://chattertexting.herokuapp.com/">Site (Slow initial load because free Heroku)</a><br />
-									<a class="paraTextGH" target="_blank" href="https://github.com/rchen016/chatter">Github Link</a> <br />
-									<button class="close-modal">Close!</button>
+										</ul><br />
+										<a class="paraTextGH" target="_blank" href="https://github.com/rchen016/profilesite">Github Link</a><bR />
+										<button class="close-modal">Close!</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
+							<a href="#" class="modalBtn" data-modal="project22Name">
+								<div class="card">
+									<img class="card-img-top cardProjectImage" src="https://i.imgur.com/A65rjCy.png" alt="Card image cap">
+									<div class="card-body">
+										<h5 class="card-title text-center display-5 paraText">myFitnessHomie - <span id="colorIt">MEN</span></h5>
+									</div>
+								</div>
+							</a>
+							<div class="modal" id="project22Name">
+								<div class="modal-sandbox"></div>
+								<div class="modal-box">
+									<div class="modal-header">
+										<h1 class="projectModalHeaders">myFitnessHomie</h1>
+									</div>
+									<div class="modal-body">
+										<p class="paraText">
+											This website is a play on myFitnessPal. It allows users to browse a workout al carte, build workout list and store progress.<br />
+											<h2>Tech Stack</h2>
+											<ul class="list-group">
+												<li class="list-group-item paraText">
+													ExpressJS
+												</li>
+												<li class="list-group-item paraText">
+													NodeJS
+												</li>
+												<li class="list-group-item paraText">
+													JQuery
+												</li>
+												<li class="list-group-item paraText">
+													MongoDB (mLabs)
+												</li>
+												<li class="list-group-item paraText">
+													Heroku
+												</li>
+											</ul>
+										</p><br />
+										<a class="paraTextGH" target="_blank" href="https://myfitnesshomie.herokuapp.com/">Site (Slow initial load because free Heroku)</a><br />
+										<a class="paraTextGH" target="_blank" href="https://github.com/rchen016/fitnessApp">Github Link</a> <br />
+										<button class="close-modal">Close!</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
+							<a href="#" class="modalBtn" data-modal="project23Name">
+								<div class="card">
+									<img class="card-img-top cardProjectImage" src="https://i.imgur.com/RT95QLh.jpg" alt="Card image cap">
+									<div class="card-body">
+										<h5 class="card-title text-center display-5 paraText">Carmelo Homage- <span id="colorIt">MEN</span></h5>
+									</div>
+								</div>
+							</a>
+							<div class="modal" id="project23Name">
+								<div class="modal-sandbox"></div>
+								<div class="modal-box">
+									<div class="modal-header">
+										<h1 class="projectModalHeaders">Carmelo Homage</h1>
+									</div>
+									<div class="modal-body">
+										<p class="paraText">
+											This website was for fun where I am displaying the accolades of my favorite NBA player Carmleo. (Retiring soon) <br />
+											<h2>Tech Stack</h2>
+											<ul class="list-group">
+												<li class="list-group-item paraText">
+													ExpressJS
+												</li>
+												<li class="list-group-item paraText">
+													NodeJS
+												</li>
+												<li class="list-group-item paraText">
+													MongoDB (mLabs)
+												</li>
+												<li class="list-group-item paraText">
+													Heroku
+												</li>
+											</ul>
+										</p><br />
+										<a class="paraTextGH" target="_blank" href="https://carmeloblog.herokuapp.com/blogs">Site (Slow initial load because free Heroku)</a><br />
+										<a class="paraTextGH" target="_blank" href="https://github.com/rchen016/blogApp">Github Link</a> <br />
+										<button class="close-modal">Close!</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
+							<a href="#" class="modalBtn" data-modal="project24Name">
+								<div class="card">
+									<img class="card-img-top cardProjectImage" src="https://images.unsplash.com/photo-1536312975196-2f175c3c0eed?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=943&q=80" alt="Card image cap">
+									<div class="card-body">
+										<h5 class="card-title text-center display-5 paraText">Messenger App Demo - <span id="colorIt">MEN</span> </h5>
+									</div>
+								</div>
+							</a>
+							<div class="modal" id="project24Name">
+								<div class="modal-sandbox"></div>
+								<div class="modal-box">
+									<div class="modal-header">
+										<h1 class="projectModalHeaders">Chatter</h1>
+									</div>
+									<div class="modal-body">
+										<p class="paraText">
+											This is a website that I implemented to learn bidirectional and event-based communication. It's a simple texting app with all the essential features of credentials/friendlist/messaging.<br />
+											<h2>Tech Stack</h2>
+											<ul class="list-group">
+												<li class="list-group-item paraText">
+													ExpressJS
+												</li>
+												<li class="list-group-item paraText">
+													NodeJS
+												</li>
+												<li class="list-group-item paraText">
+													Socketio
+												</li>
+												<li class="list-group-item paraText">
+													MongoDB (mLabs)
+												</li>
+												<li class="list-group-item paraText">
+													Heroku
+												</li>
+											</ul>
+										</p><br />
+										<a class="paraTextGH" target="_blank" href="https://chattertexting.herokuapp.com/">Site (Slow initial load because free Heroku)</a><br />
+										<a class="paraTextGH" target="_blank" href="https://github.com/rchen016/chatter">Github Link</a> <br />
+										<button class="close-modal">Close!</button>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -586,7 +613,7 @@
 				<div class="row footStyle justify-content-center align-items-center">
 					<div class="col-md-6 footDesc">
 					  <ul class="list-inline">
-						<li class="socialMedia list-inline-item">&copy; 2019 Ricky Chen</li>
+						<li class="socialMedia list-inline-item">&copy; 2020 Ricky Chen</li>
 						<li class="socialMedia list-inline-item">All rights reserved.</li>
 						<li class="socialMedia list-inline-item">Terms of use and privacy policy</li>
 					  </ul>
