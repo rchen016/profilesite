@@ -139,7 +139,7 @@ body {
     background-image: url("https://i.imgur.com/jN0MjB7.jpg");
     /* Set a specific height */
     /* Create the parallax scrolling effect */
-	#background-color: #f2f2f2;
+	background-color: #f2f2f2;
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -451,6 +451,12 @@ button.close-modal {
 		#foot{
 			height: 17vh;
 		}
+        #topCoverText{
+            margin-top: 184px;
+        }
+        .subHeader{
+            font-size: 15px;
+        }
 		.cardProjectImage{
 			opacity: 1;
 		}
@@ -461,37 +467,52 @@ button.close-modal {
 			background-position: 0 0;
 			background-attachment: scroll;
 			min-height: 0;
+            height: 500px;
 		}
-
+        #skillHeaderBar{
+            margin-top: -136px;
+        }
+        .display-1{
+            font-size: 4rem;
+        }
+        .progress-bar{
+            height: 16px;
+        }
 		.parallaxSkill {
 		    /* The image used */
 		    background-image: url("https://i.imgur.com/n4crIGm.jpg");
 		    /* Set a specific height */
 		    /* Create the parallax scrolling effect */
-			#background-color: #f2f2f2;
+			background-color: #f2f2f2;
 			background-size: cover;
 			background-position: center;
 			background-attachment: scroll;
 			min-height: 105vh;
 		}
 
-		.parallaxTop:after {
+		.parallaxTop::after {
 			content:"";
 			position:fixed; /* stretch a fixed position to the whole screen */
 			top:0;
-			height:100vh; /* fix for mobile browser address bar appearing disappearing */
+			height: 800px; /* fix for mobile browser address bar appearing disappearing */
 			max-height: 100vh;
 			left:0;
 			right:0;
 			z-index:-1; /* needed to keep in the background */
-			background: url("https://i.imgur.com/21kD2g8.jpg") center center;
+            background: url("https://i.imgur.com/hJDI7if.jpg") center center;
+			/* background: url("https://i.imgur.com/21kD2g8.jpg") center center; */
 			-webkit-background-size: cover;
 			-moz-background-size: cover;
 			-o-background-size: cover;
 			background-size: cover;
 		}
 
-
+        #trio{
+            bottom: 45px;
+        }
+        .h4{
+            font-size: 1rem;
+        }
 		.desktopParallax{
 			margin-bottom: 350px;
 		}
@@ -509,9 +530,17 @@ button.close-modal {
 			box-sizing: border-box;
 			position: relative;
 		}
+        .profParaText{
+            font-size: 25px;
+        }
+        .skillText{
+            font-size: 18px;
+        }
 		.skillmargin{
-			width: 80%;
-			display: inline-block;
+			width: 70%;
+			/* display: inline-block; */
+            margin-bottom: 0;
+            margin-left: 59px;
 		}
 		.display-3{
 			font-size: 50px;
@@ -520,11 +549,19 @@ button.close-modal {
 			text-align: center;
 		}
 		.footDesc{
-			margin-top: 20px;
+			margin-top: 5px;
 		}
 		.botFooter{
-			height: 20vh !important;
+			height: 10vh !important;
 		}
+        #bottomBox{
+            margin-left: 30px;
+            margin-bottom: 0;
+            margin-right: 30px;
+        }
+        .parallaxBottom{
+            height: 2975px;
+        }
 	}
 	@media screen /*Iphone 6*/
 	    and (max-width : 768px) {
