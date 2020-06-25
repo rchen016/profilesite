@@ -461,7 +461,16 @@ button.close-modal {
         /*end frame*/
 
         /*skill frame*/
-        
+        #skillSubHeader{
+            font-size: 14px;
+        }
+
+        .skillmargin{
+			width:100%;
+			/* display: inline-block; */
+            margin-bottom: 0;
+            margin-left: 3px;
+		}
         /*skill frame end*/
 
         /*bottom frame*/
@@ -569,18 +578,13 @@ button.close-modal {
         .skillText{
             font-size: 18px;
         }
-		.skillmargin{
-			width: 70%;
-			/* display: inline-block; */
-            margin-bottom: 0;
-            margin-left: 59px;
-		}
+
 		.display-3{
 			font-size: 50px;
 		}
-		#skillcontainer{
+		/* #skillcontainer{
 			text-align: center;
-		}
+		} */
 		.footDesc{
 			margin-top: 5px;
             display: table;
@@ -634,6 +638,29 @@ button.close-modal {
                  margin-left: 7%;
              }
             /*top frame end*/
+
+            /*skill frame*/
+            #skillSubHeader{
+                font-size: 14px;
+            }
+
+            .skillmargin{
+    			width:100%;
+    			/* display: inline-block; */
+                margin-bottom: 0;
+                margin-left: 3px;
+    		}
+            /* #skillcontainer{
+                text-align: center;
+            } */
+            #skillHeaderBar{
+                margin-top: -89px;
+            }
+            #skillHeader{
+                font-size: 30px;
+            }
+            /*skill frame end*/
+
             /*bottom frame*/
             #bottomBox{
                 margin-left: 90px;
@@ -672,6 +699,29 @@ button.close-modal {
                  margin-left: 7%;
              }
             /*top frame end*/
+
+            /*skill frame*/
+            #skillSubHeader{
+                font-size: 14px;
+            }
+
+            .skillmargin{
+    			width:100%;
+    			/* display: inline-block; */
+                margin-bottom: 0;
+                margin-left: 3px;
+    		}
+            /* #skillcontainer{
+                text-align: center;
+            } */
+            #skillHeaderBar{
+                margin-top: -89px;
+            }
+            #skillHeader{
+                font-size: 30px;
+            }
+            /*skill frame end*/
+
             /*bottom frame*/
             #bottomBox{
                 margin-left: 105px;
@@ -707,6 +757,29 @@ button.close-modal {
                      margin-left: 7%;
                  }
                 /*top frame end*/
+
+                /*skill frame*/
+                #skillSubHeader{
+                    font-size: 14px;
+                }
+
+                .skillmargin{
+        			width:100%;
+        			/* display: inline-block; */
+                    margin-bottom: 0;
+                    margin-left: 3px;
+        		}
+                /* #skillcontainer{
+                    text-align: center;
+                } */
+                #skillHeaderBar{
+                    margin-top: -89px;
+                }
+                #skillHeader{
+                    font-size: 30px;
+                }
+                /*skill frame end*/
+
                 /*bottom frame*/
                 #bottomBox{
                     margin-left: 20px;
@@ -742,6 +815,29 @@ button.close-modal {
                      margin-left: 7%;
                  }
                 /*top frame end*/
+
+                /*skill frame*/
+                #skillSubHeader{
+                    font-size: 14px;
+                }
+
+                .skillmargin{
+        			width:100%;
+        			/* display: inline-block; */
+                    margin-bottom: 0;
+                    margin-left: 3px;
+        		}
+                /* #skillcontainer{
+                    text-align: center;
+                } */
+                #skillHeaderBar{
+                    margin-top: -89px;
+                }
+                #skillHeader{
+                    font-size: 30px;
+                }
+                /*skill frame end*/
+
                 /*bottom frame*/
                 #bottomBox{
                     margin-left: 80px;
@@ -777,6 +873,29 @@ button.close-modal {
                      margin-left: 7%;
                  }
                 /*top frame end*/
+
+                /*skill frame*/
+                #skillSubHeader{
+                    font-size: 18px;
+                }
+
+                .skillmargin{
+        			width:100%;
+        			/* display: inline-block; */
+                    margin-bottom: 0;
+                    margin-left: 3px;
+        		}
+                /* #skillcontainer{
+                    text-align: center;
+                } */
+                #skillHeaderBar{
+                    margin-top: -89px;
+                }
+                #skillHeader{
+                    font-size: 35px;
+                }
+                /*skill frame end*/
+
                 /*bottom frame*/
                 #bottomBox{
                     margin-left: 30px;
@@ -818,6 +937,29 @@ button.close-modal {
                          margin-left: 7%;
                      }
                     /*top frame end*/
+
+                    /*skill frame*/
+                    #skillSubHeader{
+                        font-size: 18px;
+                    }
+
+                    .skillmargin{
+            			width:100%;
+            			/* display: inline-block; */
+                        margin-bottom: 0;
+                        margin-left: 3px;
+            		}
+                    /* #skillcontainer{
+                        text-align: center;
+                    } */
+                    #skillHeaderBar{
+                        margin-top: -89px;
+                    }
+                    #skillHeader{
+                        font-size: 42px;
+                    }
+                    /*skill frame end*/
+
                     /*bottom frame*/
                     #bottomBox{
                         margin-left: 70px;
@@ -859,6 +1001,29 @@ button.close-modal {
                          margin-left: 7%;
                      }
                     /*top frame end*/
+
+                    /*skill frame*/
+                    #skillSubHeader{
+                        font-size: 20px;
+                    }
+
+                    .skillmargin{
+            			width:100%;
+            			/* display: inline-block; */
+                        margin-bottom: 0;
+                        margin-left: 3px;
+            		}
+                    /* #skillcontainer{
+                        text-align: center;
+                    } */
+                    #skillHeaderBar{
+                        margin-top: -89px;
+                    }
+                    #skillHeader{
+                        font-size: 45px;
+                    }
+                    /*skill frame end*/
+
                     /*bottom frame*/
                     #bottomBox{
                         margin-left: 100px;
@@ -902,6 +1067,29 @@ button.close-modal {
                          margin-left: 7%;
                      }
                     /*top frame end*/
+
+                    /*skill frame*/
+                    #skillSubHeader{
+                        font-size: 25px;
+                    }
+
+                    .skillmargin{
+            			width:100%;
+            			/* display: inline-block; */
+                        margin-bottom: 0;
+                        margin-left: 3px;
+            		}
+                    /* #skillcontainer{
+                        text-align: center;
+                    } */
+                    #skillHeaderBar{
+                        margin-top: -89px;
+                    }
+                    #skillHeader{
+                        font-size: 50px;
+                    }
+                    /*skill frame end*/
+
                     /*bottom frame*/
                     #bottomBox{
                         margin-left: 200px;
