@@ -11,6 +11,13 @@ body {
 /*********************************/
 /* Default & Bootstrap Override  */
 /*********************************/
+.card-title{
+    font-size: 25px;
+    margin-bottom: 0;
+}
+.card-body{
+    padding: .8rem !important;
+}
 .progress{
     font-size: .8rem;
 }
@@ -161,6 +168,14 @@ body {
 /********/
 /* MISC */
 /********/
+.footDesc{
+    margin-top: 5px;
+    display: table;
+}
+.footInfo{
+    display: table-cell;
+    vertical-align: middle;
+}
 .profIcons{
     color: #16bbb4;
 }
@@ -430,7 +445,26 @@ button.close-modal {
 	display: none !important;
 }
 @media screen /*Iphone XS MAx */
-    and (max-width : 414px) {
+    and (max-width : 475px) {
+        /*top frame*/
+        #fullName{
+            font-size: 60px;
+            line-height: 1.2em;
+        }
+        .subHeader{
+            font-size: 18px;
+        }
+        #topCoverText{
+            margin-top: 184px;
+            margin-left: 7%;
+        }
+        /*end frame*/
+
+        /*skill frame*/
+        
+        /*skill frame end*/
+
+        /*bottom frame*/
 		.projectModalHeaders{
 	  	  font-size: 3vh;
 	    }
@@ -451,9 +485,7 @@ button.close-modal {
 		#foot{
 			height: 17vh;
 		}
-        #topCoverText{
-            margin-top: 184px;
-        }
+
         .subHeader{
             font-size: 15px;
         }
@@ -480,7 +512,8 @@ button.close-modal {
         }
 		.parallaxSkill {
 		    /* The image used */
-		    background-image: url("https://i.imgur.com/n4crIGm.jpg");
+		    /* background-image: url("https://i.imgur.com/n4crIGm.jpg"); */
+            background-image: url("https://i.imgur.com/jN0MjB7.jpg");
 		    /* Set a specific height */
 		    /* Create the parallax scrolling effect */
 			background-color: #f2f2f2;
@@ -550,25 +583,353 @@ button.close-modal {
 		}
 		.footDesc{
 			margin-top: 5px;
+            display: table;
+		}
+        .footInfo{
+            display: table-cell;
+            vertical-align: middle;
 		}
 		.botFooter{
-			height: 10vh !important;
+			height: 6vh !important;
 		}
         #bottomBox{
-            margin-left: 30px;
+            margin-left: 70px;
             margin-bottom: 0;
-            margin-right: 30px;
+            margin-right: 70px;
         }
         .parallaxBottom{
-            height: 2975px;
+            height: 2923px;
         }
-	}
-	@media screen /*Iphone 6*/
-	    and (max-width : 768px) {
-			[class*="col-"] {
-				width: 100% !important;
+        [class*="col-"] {
+            width: auto !important;
+        }
+        .card-title{
+            font-size: 17px;
+        }
+        .cardBox{
+            margin-bottom: 20px;
+        }
+        .list-inline {
+            font-size: 9px;
+        }
+        .social{
+            right: -232px;
+        }
+        /*bottom frame end*/
+	}/*Iphone XS MAx End*/
+
+    @media screen
+        and (max-width : 540px)
+        and (min-width: 476px){
+            /*top frame*/
+             #fullName{
+                 font-size: 60px;
+                 line-height: 1.2em;
+             }
+             .subHeader{
+                 font-size: 18px;
+             }
+             #topCoverText{
+                 margin-top: -202px;
+                 margin-left: 7%;
+             }
+            /*top frame end*/
+            /*bottom frame*/
+            #bottomBox{
+                margin-left: 90px;
+                margin-right: 90px;
+            }
+            .parallaxBottom{
+                height: 2967px;
+            }
+            [class*="col-"] {
+				width: auto !important;
 			}
-		}
+            .cardBox{
+                margin-bottom: 20px;
+            }
+            .card-title{
+                font-size: 17px;
+            }
+            .social{
+                right: -232px;
+            }
+            /*bottom frame end*/
+    	}
+    @media screen
+        and (max-width : 575px)
+        and (min-width: 541px) {
+            /*top frame*/
+             #fullName{
+                 font-size: 60px;
+                 line-height: 1.2em;
+             }
+             .subHeader{
+                 font-size: 18px;
+             }
+             #topCoverText{
+                 margin-top: -202px;
+                 margin-left: 7%;
+             }
+            /*top frame end*/
+            /*bottom frame*/
+            #bottomBox{
+                margin-left: 105px;
+                margin-right: 105px;
+            }
+            .parallaxBottom{
+                height: 2968px;
+            }
+            [class*="col-"] {
+				width: auto !important;
+			}
+            .cardBox{
+                margin-bottom: 20px;
+            }
+            .card-title{
+                font-size: 17px;
+            }
+            /*bottom frame end*/
+        }
+        @media screen
+            and (max-width : 678px)
+            and (min-width: 576px) {
+                /*top frame*/
+                 #fullName{
+                     font-size: 70px;
+                     line-height: 1.2em;
+                 }
+                 .subHeader{
+                     font-size: 20px;
+                 }
+                 #topCoverText{
+                     margin-top: -202px;
+                     margin-left: 7%;
+                 }
+                /*top frame end*/
+                /*bottom frame*/
+                #bottomBox{
+                    margin-left: 20px;
+                    margin-right: 20px;
+                }
+                .parallaxBottom{
+                    height: 1553px;
+                }
+                [class*="col-"] {
+    				width: auto !important;
+    			}
+                .card-title{
+                    font-size: 16px;
+                }
+                .cardBox{
+                    margin-bottom: 20px;
+                }
+                /*bottom frame end*/
+            }
+        @media screen
+            and (max-width : 767px)
+            and (min-width: 679px) {
+                /*top frame*/
+                 #fullName{
+                     font-size: 80px;
+                     line-height: 1.2em;
+                 }
+                 .subHeader{
+                     font-size: 25px;
+                 }
+                 #topCoverText{
+                     margin-top: -202px;
+                     margin-left: 7%;
+                 }
+                /*top frame end*/
+                /*bottom frame*/
+                #bottomBox{
+                    margin-left: 80px;
+                    margin-right: 80px;
+                }
+                .parallaxBottom{
+                    height: 1556px;
+                }
+                [class*="col-"] {
+                   width: auto !important;
+               }
+               .card-title{
+                   font-size: 16px;
+               }
+               .cardBox{
+                   margin-bottom: 20px;
+               }
+               /*bottom frame end*/
+            }
+        @media screen
+            and (max-width : 900px)
+            and (min-width: 768px) {
+                /*top frame*/
+                 #fullName{
+                     font-size: 80px;
+                     line-height: 1.2em;
+                 }
+                 .subHeader{
+                     font-size: 25px;
+                 }
+                 #topCoverText{
+                     margin-top: -202px;
+                     margin-left: 7%;
+                 }
+                /*top frame end*/
+                /*bottom frame*/
+                #bottomBox{
+                    margin-left: 30px;
+                    margin-right: 30px;
+                }
+                .parallaxBottom{
+                    height: 1195px;
+                }
+                .h5{
+                    font-size: 1rem;
+                }
+                .card-body{
+                    padding: .8rem;
+                }
+                [class*="col-"] {
+                   width: auto !important;
+               }
+               .card-title{
+                   font-size: 15px;
+               }
+               .cardBox{
+                   margin-bottom: 20px;
+               }
+               /*bottom frame end*/
+            }
+            @media screen
+                and (max-width : 1199px)
+                and (min-width: 901px) {
+                    /*top frame*/
+                     #fullName{
+                         font-size: 100px;
+                         line-height: 1.2em;
+                     }
+                     .subHeader{
+                         font-size: 30px;
+                     }
+                     #topCoverText{
+                         margin-top: -202px;
+                         margin-left: 7%;
+                     }
+                    /*top frame end*/
+                    /*bottom frame*/
+                    #bottomBox{
+                        margin-left: 70px;
+                        margin-right: 70px;
+                    }
+                    .parallaxBottom{
+                        height: 1195px;
+                    }
+                    .h5{
+                        font-size: 1rem;
+                    }
+                    .card-body{
+                        padding: .8rem;
+                    }
+                    [class*="col-"] {
+                       width: auto !important;
+                   }
+                   .card-title{
+                       font-size: 15px;
+                   }
+                   .cardBox{
+                       margin-bottom: 20px;
+                   }
+                   /*bottom frame end*/
+                }
+            @media screen
+                and (max-width: 1650px)
+                and (min-width: 1200px) {
+                    /*top frame*/
+                     #fullName{
+                         font-size: 100px;
+                         line-height: 1.2em;
+                     }
+                     .subHeader{
+                         font-size: 30px;
+                     }
+                     #topCoverText{
+                         margin-top: -202px;
+                         margin-left: 7%;
+                     }
+                    /*top frame end*/
+                    /*bottom frame*/
+                    #bottomBox{
+                        margin-left: 100px;
+                        margin-right: 100px;
+                    }
+                    .parallaxBottom{
+                        height: 846px;
+                    }
+                    .h5{
+                        font-size: 1rem;
+                    }
+                    .card-body{
+                        padding: .8rem;
+                    }
+                    [class*="col-"] {
+                       width: auto !important;
+                   }
+                   .card-title{
+                       font-size: 15px;
+                   }
+                   .parallaxBottom{
+                       min-height: 85vh;
+                   }
+                   .cardBox{
+                       margin-bottom: 20px;
+                   }
+                   /*bottom frame end*/
+                }
+            @media screen
+                and (min-width: 1651px) {
+                    /*top frame*/
+                     #fullName{
+                         font-size: 120px;
+                         line-height: 1.2em;
+                     }
+                     .subHeader{
+                         font-size: 40px;
+                     }
+                     #topCoverText{
+                         margin-top: -202px;
+                         margin-left: 7%;
+                     }
+                    /*top frame end*/
+                    /*bottom frame*/
+                    #bottomBox{
+                        margin-left: 200px;
+                        margin-right: 200px;
+                    }
+                    .parallaxBottom{
+                        height: 846px;
+                    }
+                    .h5{
+                        font-size: 1rem;
+                    }
+                    .card-body{
+                        padding: .8rem;
+                    }
+                    [class*="col-"] {
+                       width: auto !important;
+                   }
+                   .card-title{
+                       font-size: 15px;
+                   }
+                   .parallaxBottom{
+                       min-height: 85vh;
+                   }
+                   .cardBox{
+                       margin-bottom: 20px;
+                   }
+                   /*bottom frame end*/
+                }
 }
 
 /************************/
