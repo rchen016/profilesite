@@ -154,12 +154,15 @@ body {
 }
 
 .parallaxBottom{
-
-    background-image: url("https://images.unsplash.com/photo-1514238434711-667893ab79b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80");
+    background-image: url("https://i.imgur.com/0h1VzlB.jpg");
     background-size: cover;
-	background-position: center;
+	background-position: center center;
+    background-repeat: no-repeat;
 	background-attachment: fixed;
 	min-height: 95vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 /*****************/
 /* Parallax End  */
@@ -510,6 +513,7 @@ button.close-modal {
 			min-height: 0;
             height: 500px;
 		}
+
         #skillHeaderBar{
             margin-top: -136px;
         }
@@ -525,7 +529,7 @@ button.close-modal {
             background-image: url("https://i.imgur.com/jN0MjB7.jpg");
 		    /* Set a specific height */
 		    /* Create the parallax scrolling effect */
-			background-color: #f2f2f2;
+			/* background-color: #f2f2f2; */
 			background-size: cover;
 			background-position: center;
 			background-attachment: scroll;
@@ -536,8 +540,8 @@ button.close-modal {
 			content:"";
 			position:fixed; /* stretch a fixed position to the whole screen */
 			top:0;
-			height: 800px; /* fix for mobile browser address bar appearing disappearing */
-			max-height: 100vh;
+			height: 1000px; /* fix for mobile browser address bar appearing disappearing */
+			max-height: 120vh;
 			left:0;
 			right:0;
 			z-index:-1; /* needed to keep in the background */
@@ -603,6 +607,7 @@ button.close-modal {
         }
         .parallaxBottom{
             height: 2923px;
+            background-image: url("");
         }
         [class*="col-"] {
             width: auto !important;
@@ -668,6 +673,7 @@ button.close-modal {
             }
             .parallaxBottom{
                 height: 2967px;
+                background-image: url("https://i.imgur.com/0h1VzlB.jpg");
             }
             [class*="col-"] {
 				width: auto !important;
@@ -729,6 +735,7 @@ button.close-modal {
             }
             .parallaxBottom{
                 height: 2968px;
+                background-image: url("https://i.imgur.com/0h1VzlB.jpg");
             }
             [class*="col-"] {
 				width: auto !important;
