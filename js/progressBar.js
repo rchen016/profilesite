@@ -16,27 +16,27 @@ $(window).scroll(function(){
             if((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
                 var setBar1 = setInterval(function(){
                     document.getElementById("pb1").style.width = Number(document.getElementById("pb1").style.width.split("%")[0])+1+"%";
-                    if(document.getElementById("pb1").style.width.split("%")[0]>=42){
+                    if(document.getElementById("pb1").style.width.split("%")[0]>=75){
                         clearInterval(setBar1);
                         document.getElementById("pro1").style.visibility = "visible";
                         var setBar2 = setInterval(function(){
                             document.getElementById("pb2").style.width = Number(document.getElementById("pb2").style.width.split("%")[0])+1+"%";
-                            if(document.getElementById("pb2").style.width.split("%")[0]>=50){
+                            if(document.getElementById("pb2").style.width.split("%")[0]>=55){
                                 clearInterval(setBar2);
                                 document.getElementById("pro2").style.visibility = "visible";
                                 var setBar3 = setInterval(function(){
                                     document.getElementById("pb3").style.width = Number(document.getElementById("pb3").style.width.split("%")[0])+1+"%";
-                                    if(document.getElementById("pb3").style.width.split("%")[0]>=83){
+                                    if(document.getElementById("pb3").style.width.split("%")[0]>=90){
                                         clearInterval(setBar3);
                                         document.getElementById("pro3").style.visibility = "visible";
                                         var setBar4 = setInterval(function(){
                                             document.getElementById("pb4").style.width = Number(document.getElementById("pb4").style.width.split("%")[0])+1+"%";
-                                            if(document.getElementById("pb4").style.width.split("%")[0]>=68){
+                                            if(document.getElementById("pb4").style.width.split("%")[0]>=77){
                                                 clearInterval(setBar4);
                                                 document.getElementById("pro4").style.visibility = "visible";
                                                 var setBar5 = setInterval(function(){
                                                     document.getElementById("pb5").style.width = Number(document.getElementById("pb5").style.width.split("%")[0])+1+"%";
-                                                    if(document.getElementById("pb5").style.width.split("%")[0]>=40){
+                                                    if(document.getElementById("pb5").style.width.split("%")[0]>=60){
                                                         clearInterval(setBar5);
                                                         document.getElementById("pro5").style.visibility = "visible";
                                                         $(window).off('scroll.custom',scroll);
